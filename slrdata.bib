@@ -1,0 +1,2342 @@
+@article{Ahmed2018,
+abstract = {Proof-of-Stake systems randomly choose, on each round, one of the participants as a consensus leader that extends the chain with the next block such that the selection probability is proportional to the owned stake. However, distributed random number generation is notoriously difficult. Systems that derive randomness from the previous blocks are completely insecure; solutions that provide secure random selection are inefficient due to their high communication complexity; and approaches that balance security and performance exhibit selection bias. When block creation is rewarded with new stake, even a minor bias can have a severe cumulative effect. In this paper, we propose Robust Round Robin, a new consensus scheme that addresses this selection problem. We create reliable long-term identities by bootstrapping from an existing infrastructure, such as Intel's SGX processors, or by mining them starting from an initial fair distribution. For leader selection we use a deterministic approach. On each round, we select a set of the previously created identities as consensus leader candidates in round robin manner. Because simple round-robin alone is vulnerable to attacks and offers poor liveness, we complement such deterministic selection policy with a lightweight endorsement mechanism that is an interactive protocol between the leader candidates and a small subset of other system participants. Our solution has low good efficiency as it requires no expensive distributed randomness generation and it provides block creation fairness which is crucial in deployments that reward it with new stake.},
+annote = {META{\{}
+[Study ID]
+43
+[Accepted]
+X
+[Reason]
+Relies on Trusted Execution Enviroments, Selection bias only in PoS systems, and no meaningfull discussion on Rapidchain
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1804.07391},
+author = {Ahmed, Mansoor and Kostiainen, Kari},
+eprint = {1804.07391},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Ahmed, Kostiainen - 2018 - Don't Mine, Wait in Line Fair and Efficient Blockchain Consensus with Robust Round Robin.pdf:pdf},
+title = {{Don't Mine, Wait in Line: Fair and Efficient Blockchain Consensus with Robust Round Robin}},
+url = {http://arxiv.org/abs/1804.07391},
+year = {2018}
+}
+@article{Amiri2019,
+abstract = {Scalability is one of the main roadblocks to business adoption of blockchain systems. Despite recent intensive research on using sharding techniques to enhance the scalability of blockchain systems, existing solutions do not efficiently address cross-shard transactions. In this paper, we introduce SharPer, a permissioned blockchain system that enhances the scalability of blockchain systems by clustering (partitioning) the nodes and assigning different data shards to different clusters. SharPer supports both intra-shard and cross-shard transactions and processes intra-shard transactions of different clusters as well as cross-shard transactions with non-overlapping clusters simultaneously. In SharPer, the blockchain ledger is formed as a directed acyclic graph where each cluster maintains only a view of the ledger. SharPer also incorporates a flattened protocol to establish consensus among clusters on the order of cross-shard transactions. The experimental results reveal the efficiency of SharPer in terms of performance and scalability especially in workloads with a low percentage of cross-shard transactions (typical settings in partitioned databases).},
+annote = {META{\{}
+[Study ID]
+32
+[Accepted]
+X
+[Reason]
+Wrong statements, too strong assumptions, sharding based on geography (succeptible to targeted atttacks), and no reconfiguration
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1910.00765},
+author = {Amiri, Mohammad Javad and Agrawal, Divyakant and Abbadi, Amr El},
+eprint = {1910.00765},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Amiri, Agrawal, Abbadi - 2019 - SharPer Sharding Permissioned Blockchains Over Network Clusters.pdf:pdf},
+pages = {1--25},
+title = {{SharPer: Sharding Permissioned Blockchains Over Network Clusters}},
+url = {http://arxiv.org/abs/1910.00765},
+year = {2019}
+}
+@article{Avarikioti2019,
+abstract = {Sharding distributed ledgers is the most promising on-chain solution for scaling blockchain technology. In this work, we define and analyze the properties a sharded distributed ledger should fulfill. More specifically, we show that a sharded blockchain cannot be scalable under a fully adaptive adversary, but it can scale up to {\$}O(n/\backslashlog n){\$} under an epoch-adaptive adversary. This is possible only if the distributed ledger creates succinct proofs of the valid state updates at the end of each epoch. Our model builds upon and extends the Bitcoin backbone protocol by defining consistency and scalability. Consistency encompasses the need for atomic execution of cross-shard transactions to preserve safety, whereas scalability encapsulates the speedup a sharded system can gain in comparison to a non-sharded system. In order to show the power of our framework, we analyze the most prominent sharded blockchains and either prove their correctness (OmniLedger, RapidChain) under our model or pinpoint where they fail to balance the consistency and scalability requirements (Elastico, Monoxide).},
+annote = {META{\{}
+[Study ID]
+19
+[Accepted]
+
+[Reason]
+
+{\}}
+
+ME{\{}
+[Main categories]
+
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+
+[Is the research method, process or design clearly stated?]
+
+[Is the research method likely to have introduced significant bias?]
+
+[Are the data collection methods adequately described?]
+
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+
+[Are negative findings presented?]
+
+[Are important effects overlooked?]
+
+[How credible are the findings?]
+
+[If credible, are they important?]
+
+[How well has knowledge or understanding been extended by the research?]
+
+[How well is the scope for drawing wider inference explained?]
+
+[How well has the approach to, and formulation of, analysis been conveyed?]
+
+[How well was the diversity of perspective and context explored?]
+
+[How clear and coherent is the research?]
+
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1910.10434},
+author = {Avarikioti, Georgia and Kokoris-Kogias, Eleftherios and Wattenhofer, Roger},
+eprint = {1910.10434},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Avarikioti, Kokoris-Kogias, Wattenhofer - 2019 - Divide and Scale Formalization of Distributed Ledger Sharding Protocols.pdf:pdf},
+pages = {15--17},
+title = {{Divide and Scale: Formalization of Distributed Ledger Sharding Protocols}},
+url = {http://arxiv.org/abs/1910.10434},
+year = {2020}
+}
+@book{B2018,
+annote = {META{\{}
+[Study ID]
+3
+[Accepted]
+V
+[Reason]
+Small discussion and possible tradeoff
+{\}}
+
+ME{\{}
+[Main categories]
+Security
+[Classification]
+
+[Themes]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+This QA only rates the relevant parts. Ok paper.
+
+[Research question or issue]
+This paper summarizes the desired end properties of blockchain consensus protocols and sheds light on the crit- ical role of theoretical analyses of their design
+
+[Notes]
+
+[Summary of paper]
+Presents scalabality solutions based on byzantine agreement. States mostly only facts, but some small discussion.
+[Evaluation of paper]
+Ok survey paper, but lacking analysis and discussion.
+[Main findings]
+-
+[Rapidchain specifics]
+"The security of these designs depends directly on the size of the set of indentites established to run the BA protocol." ... "This sample size establishes limits on how often the identity establishment protocol can run, which is directly related to the constant c for which the fairness property holds" ... "Several works have improved the communication costs of BA agreement protocols, trading off the perfor- mance between the honest case and when the overlay P2P graphs have Byzan- tine adversaries [40,67]"
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+0
+[Is the research method likely to have introduced significant bias?]
+10
+[Are the data collection methods adequately described?]
+0
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+7
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+10
+[If credible, are they important?]
+5
+[How well has knowledge or understanding been extended by the research?]
+5
+[How well is the scope for drawing wider inference explained?]
+10
+[How well has the approach to, and formulation of, analysis been conveyed?]
+10
+[How well was the diversity of perspective and context explored?]
+8
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+author = {B, Sreesh Kishore and B, Renuka Kumar and Rajan, Sreeranga},
+doi = {10.1007/978-3-030-05171-6},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/B, B, Rajan - 2018 - Towards Accuracy in Similarity Analysis.pdf:pdf},
+isbn = {9783030051716},
+keywords = {Android,Normalized compression,Similarity analysis,androguard,android,normalized compression distance,similarity analysis},
+pages = {146--167},
+publisher = {Springer International Publishing},
+title = {{on the Security of Blockchain Consensus Protocols}},
+url = {http://dx.doi.org/10.1007/978-3-030-05171-6{\_}8},
+volume = {1},
+year = {2018}
+}
+@article{Bano2019,
+abstract = {The core technical component of blockchains is consensus: how to reach agreement among a distributed network of nodes. A plethora of blockchain consensus protocols have been proposed—ranging from new designs, to novel modifications and extensions of consensus protocols from the classical distributed systems literature. The inherent complexity of consensus protocols and their rapid and dramatic evolution makes it hard to contextualize the design landscape. We address this challenge by conducting a systematization of knowledge of blockchain consensus protocols. After first discussing key themes in classical consensus protocols, we describe: (i) protocols based on proof-of-work; (ii) proof-of-X protocols that replace proof-of-work with more energy-efficient alternatives; and (iii) hybrid protocols that are compositions or variations of classical consensus protocols. This survey is guided by a systematization framework we develop, to highlight the various building blocks of blockchain consensus design, along with a discussion on their security and performance properties. We identify research gaps and insights for the community to consider in future research endeavours.},
+annote = {META{\{}
+[Study ID]
+8
+[Accepted]
+V
+[Reason]
+Good discussions and gaps
+{\}}
+
+ME{\{}
+[Main categories]
+Survey
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+
+[Is the research method, process or design clearly stated?]
+
+[Is the research method likely to have introduced significant bias?]
+
+[Are the data collection methods adequately described?]
+
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+
+[Are negative findings presented?]
+
+[Are important effects overlooked?]
+
+[How credible are the findings?]
+
+[If credible, are they important?]
+
+[How well has knowledge or understanding been extended by the research?]
+
+[How well is the scope for drawing wider inference explained?]
+
+[How well has the approach to, and formulation of, analysis been conveyed?]
+
+[How well was the diversity of perspective and context explored?]
+
+[How clear and coherent is the research?]
+
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+
+{\}}},
+author = {Bano, Shehar and Sonnino, Alberto and Al-Bassam, Mustafa and Azouvi, Sarah and McCorry, Patrick and Meiklejohn, Sarah and Danezis, George},
+doi = {10.1145/3318041.3355458},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bano et al. - 2019 - Sok Consensus in the age of blockchains.pdf:pdf},
+isbn = {9781450367325},
+journal = {AFT 2019 - Proceedings of the 1st ACM Conference on Advances in Financial Technologies},
+keywords = {Blockchains,Byzantine Fault Tolerance,Consensus,Proof-of-stake,Proof-of-work},
+number = {Section 4},
+pages = {183--198},
+title = {{Sok: Consensus in the age of blockchains}},
+year = {2019}
+}
+@article{Bartolomey2019,
+annote = {META{\{}
+[Study ID]
+10
+[Accepted]
+V
+[Reason]
+Discussion on rapidchain
+{\}}
+
+ME{\{}
+[Main categories]
+Survey
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+Great paper, but doesn't really answer it's research question fully.
+[Research question or issue]
+"examine their resilience under as- pects of security in a classic manner, e.g. Sybil/Byzantine adversaries etc., as well as real-world scalability"
+[Notes]
+
+[Summary of paper]
+Summary of comitee-based sharding. Components, and elastico, omniledger and Rapidchain. Discussion on how they compare.
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+Trade-off betwen high and low stake transactions
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+5
+[Is the research method likely to have introduced significant bias?]
+5
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+9
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+10
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+7
+[How well is the scope for drawing wider inference explained?]
+10
+[How well has the approach to, and formulation of, analysis been conveyed?]
+10
+[How well was the diversity of perspective and context explored?]
+10
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+10
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+author = {Bartolomey, Alexander},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bartolomey - 2019 - Progress on the Use of Sharding to Enhance Blockchain Scalability.pdf:pdf},
+pages = {1--15},
+title = {{Progress on the Use of Sharding to Enhance Blockchain Scalability}},
+year = {2019}
+}
+@article{Bunz2019,
+abstract = {To validate transactions, cryptocurrencies such as Bitcoin and Ethereum require nodes to verify that a blockchain is valid. This entails downloading and verifying all blocks, taking hours and requiring gigabytes of bandwidth and storage. Hence, clients with limited resources cannot verify transactions independently without trusting full nodes. Bitcoin and Ethereum offer light clients known as simplified payment verification (SPV) clients, that can verify the chain by downloading only the block headers. Unfortunately, the storage and bandwidth requirements of SPV clients still increase linearly with the chain length. For example, as of July 2019, an SPV client in Ethereum needs to download and store about 4 GB of data. Recently, Kiayias et al. proposed a solution known as non-interactive proofs of proof-of-work (NIPoPoW) that allows a light client to download and store only a polylogarithmic number of block headers in expectation. Unfortunately, NIPoPoWs are succinct only as long as no adversary influences the honest chain, and can only be used in chains with fixed block difficulty, contrary to most cryptocur-rencies which adjust block difficulty frequently according to the network hashrate. We introduce FlyClient, a novel transaction verification light client for chains of variable difficulty. FlyClient is efficient both asymptotically and practically and requires downloading only a logarithmic number of block headers while storing only a single block header between executions. Using an optimal probabilistic block sampling protocol and Merkle Mountain Range (MMR) commitments, FlyClient overcomes the limitations of NIPoPoWs and generates shorter proofs over all measured parameters. In Ethereum, FlyClient achieves a synchronization proof size of less than 500 KB which is roughly 6,600x smaller than SPV proofs. We finally discuss how FlyClient can be deployed with minimal changes to the existing cryptocurrencies via an uncontentious velvet fork.},
+annote = {META{\{}
+[Study ID]
+38
+[Accepted]
+X
+[Reason]
+No apperent use to the rapidchain protocol itself. Only usefull for clients of a Rapidchain implementation, but that is outside the scope of this literature review. 
+{\}}},
+author = {B{\"{u}}nz, Benedikt and Kiffer, Lucianna and Luu, Loi and Zamani, Mahdi},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/B{\"{u}}nz et al. - 2019 - FlyClient Super-Light Clients for Cryptocurrencies.pdf:pdf},
+journal = {20'S{\&}P},
+pages = {1--31},
+title = {{FlyClient: Super-Light Clients for Cryptocurrencies}},
+url = {https://eprint.iacr.org/2019/226.pdf},
+year = {2019}
+}
+@article{Chawla2019,
+abstract = {Blockchain technology and other distributed ledger systems fill an important role in resilient data storage and publication. However, their normally-decentralized methods also bring unique challenges distinct from more traditional approaches. One lies in the replication of data between participating nodes; since no individual node is more trusted than any other, each node maintains its own copy of the entire ledger for the purposes of validating new transactions. Improving how this information is stored and more importantly, how it propagates across the network, are open research questions. In this work, we propose Velocity, a novel block propagation approach based on fountain codes, allowing for better decentralized delivery of blocks and reduced network bottlenecks without sacrificing the security guarantees of the blockchain ledger itself. We also provide an assessment of economic incentives and their impact on participant behavior, showing that the proposed approach is financially beneficial to rational actors. We conclude by showing experimentally that this approach permits for the mining of even larger blocks, thereby increasing transaction throughput of the system compared to existing state of the art methods.},
+annote = {META{\{}
+[Study ID]
+14
+[Accepted]
+V
+[Reason]
+EEC
+{\}}
+
+ME{\{}
+[Main categories]
+EEC
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+"1) Can we increase block size and transaction throughput while maintaining network behavior?
+2) Can a propagation method be chosen that improves resilience to communication disruption?
+3) Can the adversarially-resilient nature of existing ap- proaches be maintained under the revised scheme?
+4) Is a new propagation approach likely to be adopted by economically-rational actors
+"
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+EEC
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+10
+[Is the research method likely to have introduced significant bias?]
+5
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+-
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+10
+[If credible, are they important?]
+-
+[How well has knowledge or understanding been extended by the research?]
+7
+[How well is the scope for drawing wider inference explained?]
+7
+[How well has the approach to, and formulation of, analysis been conveyed?]
+6
+[How well was the diversity of perspective and context explored?]
+-
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+8
+{\}}},
+author = {Chawla, Nakul and Behrens, Hans Walter and Tapp, Darren and Boscovic, Dragan and Candan, K. Selcuk},
+doi = {10.1109/BLOC.2019.8751427},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Chawla et al. - 2019 - Velocity Scalability Improvements in Block Propagation Through Rateless Erasure Coding.pdf:pdf},
+isbn = {9781728113289},
+journal = {ICBC 2019 - IEEE International Conference on Blockchain and Cryptocurrency},
+keywords = {cryptography,data transfer,online banking,protocols},
+pages = {447--454},
+title = {{Velocity: Scalability Improvements in Block Propagation Through Rateless Erasure Coding}},
+year = {2019}
+}
+@article{Chitra2019,
+abstract = {Increased interest in scalable and high-throughput blockchains has led to an explosion in the number of committee selection methods in the literature. Committee selection mechanisms allow consensus protocols to safely select a committee, or a small subset of validators that is permitted to vote and verify a block of transactions, in a distributed ledger. There are many such mechanisms, each with substantially different methodologies and guarantees on communication complexity, resource usage, and fairness. In this paper, we illustrate that, despite these implementation-level differences, there are strong statistical similarities between committee selection mechanisms. We concretely show this by proving that the committee selection of the Avalanche consensus protocol can be used to choose committees in the Stellar Consensus Protocol that satisfy the necessary and sufficient conditions for Byzantine agreement. We also verify these claims using simulations and numerically observe sharp phase transitions as a function of protocol parameters. Our results suggest the existence of a "statistical taxonomy" of committee selection mechanisms in distributed consensus algorithms.},
+annote = {META{\{}
+[Study ID]
+37
+[Accepted]
+X
+[Reason]
+Federated, and not similar to Rapidchain.
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1904.09839},
+author = {Chitra, Tarun and Chitra, Uthsav},
+eprint = {1904.09839},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Chitra, Chitra - 2019 - Committee Selection is More Similar Than You Think Evidence from Avalanche and Stellar.pdf:pdf},
+title = {{Committee Selection is More Similar Than You Think: Evidence from Avalanche and Stellar}},
+url = {http://arxiv.org/abs/1904.09839},
+year = {2019}
+}
+@article{Choi2019,
+abstract = {We suggest a general framework for network-coded Practical Byzantine Fault Tolerant (PBFT) consensus for enabling agreement among distributed nodes under Byzantine attacks. The suggested protocol generalizes existing replication and sharding schemes which are frequently used for consensus in current blockchain systems. Using the proposed algorithm, it is possible to reach a consensus when the available bandwidth is considerably smaller on individual links compared to that required for conventional schemes. It is shown that there exists an upper bound on the number of nodes that can participate in the protocol, given a maximum bandwidth constraint across all pairwise links. Furthermore, the protocol that achieves the upper bound is provided by using a set of constant weight codes.},
+annote = {META{\{}
+[Study ID]
+5 || 42
+[Accepted]
+V
+[Reason]
+Comment on polyshard, coding.
+{\}}
+
+ME{\{}
+[Main categories]
+Coding | network | data sharding
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+Possible lack of own knowledge to judge the paper.
+
+[Research question or issue]
+network-coded Practical Byzantine Fault Tolerant (PBFT) consensus
+[Notes]
+
+[Summary of paper]
+-
+
+[Evaluation of paper]
+Great paper, but possible use of equivocation because the lack of discussion and formal paper layout. 
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+5
+[Is the research method likely to have introduced significant bias?]
+9
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+7
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+8
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+8
+[How well is the scope for drawing wider inference explained?]
+7
+[How well has the approach to, and formulation of, analysis been conveyed?]
+8
+[How well was the diversity of perspective and context explored?]
+6
+[How clear and coherent is the research?]
+6
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+4
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+3
+{\}}},
+author = {Choi, Beongjun and Sohn, Jy Yong and Han, Dong Jun and Moon, Jaekyun},
+doi = {10.1109/ISIT.2019.8849573},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Choi et al. - 2019 - Scalable Network-Coded PBFT Consensus Algorithm.pdf:pdf},
+isbn = {9781538692912},
+issn = {21578095},
+journal = {IEEE International Symposium on Information Theory - Proceedings},
+pages = {857--861},
+publisher = {IEEE},
+title = {{Scalable Network-Coded PBFT Consensus Algorithm}},
+volume = {2019-July},
+year = {2019}
+}
+@article{Dang2019,
+abstract = {Existing blockchain systems scale poorly because of their distributed consensus protocols. Current attempts at improving blockchain scalability are limited to cryptocurrency. Scaling blockchain systems under general workloads (i.e., non-cryptocurrency applications) remains an open question. This work takes a principled approach to apply sharding to blockchain systems in order to improve their transaction throughput at scale. This is challenging, however, due to the fundamental difference in failure models between databases and blockchain. To achieve our goal, we first enhance the performance of Byzantine consensus protocols, improving individual shards' throughput. Next, we design an efficient shard formation protocol that securely assigns nodes into shards. We rely on trusted hardware, namely Intel SGX, to achieve high performance for both consensus and shard formation protocol. Third, we design a general distributed transaction protocol that ensures safety and liveness even when transaction coordinators are malicious. Finally, we conduct an extensive evaluation of our design both on a local cluster and on Google Cloud Platform. The results show that our consensus and shard formation protocols outperform state-of-the-art solutions at scale. More importantly, our sharded blockchain reaches a high throughput that can handle Visa-level workloads, and is the largest ever reported in a realistic environment.},
+annote = {META{\{}
+[Study ID]
+11
+[Accepted]
+V
+[Reason]
+Small discussion on rapidchain, rest of paper not relevant due to TEE, and permissioned.
+{\}}
+
+ME{\{}
+[Main categories]
+Sharding
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+"Scal- ing blockchain systems under general workloads"
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+Ok paper, but lacking security analysis, but that is not relevant for this lit rev anyways.
+[Main findings]
+
+[Rapidchain specifics]
+Isolation and atomicity of Rapidchain.
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+8
+[Is the research method likely to have introduced significant bias?]
+4
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+7
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+10
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+5
+[How well is the scope for drawing wider inference explained?]
+7
+[How well has the approach to, and formulation of, analysis been conveyed?]
+8
+[How well was the diversity of perspective and context explored?]
+6
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1804.00399},
+author = {Dang, Hung and Dinh, Tien Tuan Anh and Loghin, Dumitrel and Chang, Ee Chien and Lin, Qian and Ooi, Beng Chin},
+doi = {10.1145/3299869.3319889},
+eprint = {1804.00399},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Dang et al. - 2019 - Towards scaling blockchain systems via sharding.pdf:pdf},
+isbn = {9781450356435},
+issn = {07308078},
+journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+pages = {123--140},
+title = {{Towards scaling blockchain systems via sharding}},
+year = {2019}
+}
+@article{El-hindi,
+annote = {META{\{}
+[Study ID]
+44
+[Accepted]
+X
+[Reason]
+BlockchainDB is a layer on top of an existing blockchain. It cannot be used to improve the sharding enviroment of an UTXO system. 
+{\}}},
+author = {El-hindi, Muhammad},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/El-hindi - Unknown - BlockchainDB - A Shared Database on Blockchains.pdf:pdf},
+number = {11},
+pages = {1597--1609},
+title = {{BlockchainDB - A Shared Database on Blockchains}},
+volume = {12},
+year = {2019}
+}
+@article{Fidelman2019,
+annote = {META{\{}
+[Study ID]
+39
+[Accepted]
+X
+[Reason]
+Generalizes sharding, and suggest that sharding schemes should follow this generalization instead of creating it from scratch to save time on correctness proof, but does not apply this generalization to Rapidchain. Generalization migth be good for new sharding designs, but applying this to Rapidchain won't increase value. 
+{\}}},
+author = {Fidelman, Zuphit},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Fidelman - 2019 - A Generic Sharding Scheme for Blockchain Protocols.pdf:pdf},
+number = {June},
+title = {{A Generic Sharding Scheme for Blockchain Protocols}},
+year = {2019}
+}
+@article{Gupta2019,
+abstract = {{The recent surge in blockchain applications and database systems has renewed the interest in traditional Byzantine Fault Tolerant consensus protocols (BFT). Several such BFT protocols follow a primary-backup design, in which a primary{\}} replica coordinates the consensus protocol. In primary-backup designs, the normal-case operations are rather simple. At the same time, primary-backup designs place an unreasonable burden on primaries and allows malicious primaries to affect the system throughput substantially, however. To resolve this situation, we propose the MultiBFT paradigm, a protocol-agnostic approach towards improving the performance of primary-backup consensus protocols. At the core of MultiBFT is an approach to continuously order the client-transactions by running several instances of the underlying BFT protocol in parallel. We bring forth our paradigm to two well-established BFT protocols and demonstrate that the rendered parallelized protocols are not only safe and live but also significantly outperform, up to {\$}2\backslashtimes{\$}, their original non-parallelized forms. Further, we show that our MultiBFT paradigm reaches a throughput of up to {\$}320{\$}K transactions per second.},
+annote = {META{\{}
+[Study ID]
+34
+[Accepted]
+X
+[Reason]
+The abstract concept of this paper is to run any underlying primary-backup bft protocol in pararellel. However this would increase communication cost significantly in the Rapidchain case. The paper does not discuss this BFT protocol in context of Rapidchain. The bft protocol in Rapidchain is specifically designed with the sharded enviroment in mind, so such a multi-bft paradigm migth not be usefull, for example due to cross-shard transactions.
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1911.00837},
+author = {Gupta, Suyash and Hellings, Jelle and Sadoghi, Mohammad},
+eprint = {1911.00837},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Gupta, Hellings, Sadoghi - 2019 - Scaling Blockchain Databases through Parallel Resilient Consensus Paradigm.pdf:pdf},
+number = {2},
+title = {{Scaling Blockchain Databases through Parallel Resilient Consensus Paradigm}},
+url = {http://arxiv.org/abs/1911.00837},
+year = {2019}
+}
+@article{Hafid2020,
+abstract = {In the context of blockchain protocols, each node stores the entire state of the network and processes all transactions. This ensures high security but limits scalability. Sharding is one of the most promising solutions to scale blockchain. In this paper, we analyze the security of three Sharding-based protocols using tail inequalities. The key contribution of our paper is to upper bound the failure probability for one committee and so for each epoch using tail inequalities for sums of bounded hypergeometric and binomial distributions. Two tail inequalities are used: Hoeffding and Chv{\'{a}}tal. The first tail (Hoeffding inequality) is much more precise bound. The second (Chv{\'{a}}tal inequality) is an exponential bound; it is simple to compute but weaker bound compared to Hoeffding. Our contribution is an alternative solution when the failure probability simulations are impractical. To show the effectiveness of our analysis, we perform simulations of the exponential bound.},
+annote = {META{\{}
+[Study ID]
+28
+[Accepted]
+X
+[Reason]
+Duplicate
+{\}}},
+author = {Hafid, Abdelatif and Hafid, Abdelhakim Senhaji and Samih, Mustapha},
+doi = {10.1007/978-3-030-23813-1_13},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Hafid, Hafid, Samih - 2020 - A methodology for a probabilistic security analysis of sharding-based blockchain protocols.pdf:pdf},
+isbn = {9783030238124},
+issn = {21945365},
+journal = {Advances in Intelligent Systems and Computing},
+keywords = {Blockchain,Exponential bound,Failure probability,Hypergeometric distribution,Probabilistic security analysis,Sharding,Tail inequality},
+pages = {101--109},
+title = {{A methodology for a probabilistic security analysis of sharding-based blockchain protocols}},
+volume = {1010},
+year = {2020}
+}
+@article{Hafid2019,
+abstract = {In recent years, the scalability issue of blockchain protocols has received huge attention. Sharding is one of the most promising solutions to scale blockchain. The basic idea behind sharding is to divide the blockchain network into multiple committees where each committee processes a separate set of transactions. In this paper, we propose a mathematical model to analyze the security of sharding-based blockchain protocols. Moreover, we analyze well-known sharding protocols including RapidChain, OmniLedger, and Zilliga to validate our model. The key contribution of our paper is to bound the failure probability for one committee and so for each epoch using probability bounds for sums of upper-bounded hypergeometric and binomial distributions. In addition, this paper contribution answers the following fundamental question: 'how to keep the failure probability, for a given sharding protocol, smaller than a predefined threshold?'. Three probability bounds are used: Chebyshev, Hoeffding, and Chv{\'{a}}tal. To illustrate the effectiveness of our proposed model, we conduct a numerical and comparative analysis of the proposed bounds.},
+annote = {META{\{}
+[Study ID]
+5
+[Accepted]
+V
+[Reason]
+Security of comitee based sharding, found bounded probability function for comitte and epoch failure probability.
+{\}}
+
+ME{\{}
+[Main categories]
+Security | failure probability
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+Own knowledge not enough to properly validate results but seems exelent and well reasoned.
+[Research question or issue]
+"bound the failure probability for one committee and so for each epoch using probability bounds for sums of upper-bounded hypergeometric and binomial distributions." and "how to keep the failure probability, for a given sharding protocol, smaller than a predefined threshold?"
+[Notes]
+Mentions that harmony and zilliga is industry sharding. 
+
+[Summary of paper]
+Finds the best probability bound to estimate security, Hoeffding, that can be used to estimate paramters to be within a defined security treshold. 
+[Evaluation of paper]
+Excelent paper!
+[Main findings]
+summary
+[Rapidchain specifics]
+Uses the model on rapidchain and its counterparts. 
+[Rapidchain applications]
+Parameter picking
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+10
+[Is the research method likely to have introduced significant bias?]
+9
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+10
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+9
+[Are negative findings presented?]
+10
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+10
+[How well is the scope for drawing wider inference explained?]
+10
+[How well has the approach to, and formulation of, analysis been conveyed?]
+10
+[How well was the diversity of perspective and context explored?]
+8
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+author = {Hafid, Abdelatif and Hafid, Abdelhakim Senhaji and Samih, Mustapha},
+doi = {10.1109/ACCESS.2019.2961065},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Hafid, Hafid, Samih - 2019 - New mathematical model to analyze security of sharding-based blockchain protocols.pdf:pdf},
+issn = {21693536},
+journal = {IEEE Access},
+keywords = {Blockchain,failure probability,hypergeometric distribution,probability bounds,sharding},
+pages = {185447--185457},
+publisher = {IEEE},
+title = {{New mathematical model to analyze security of sharding-based blockchain protocols}},
+volume = {7},
+year = {2019}
+}
+@article{Homoliak2019a,
+abstract = {Due to their specific features, such as decentralization and immutability, blockchains have become popular in recent years. Blockchains are full-stack distributed systems in terms of realization, where security is a critical factor for their success. However, despite increasing popularity and adoption, there is a lack of standardized models to study security threats related to blockchains in a similar fashion as was done, e.g., in the area of cloud computing. To fill this gap, the main focus of our work is to systematize the knowledge about security and privacy aspects of blockchains, and thus contribute to the standardization of this domain. To this end, we propose the security reference architecture for blockchains, which utilizes a stacked model (similar to the ISO/OSI) that demonstrates the nature and hierarchy of various security and privacy threats. The model contains four layers: (1) the network layer, (2) the consensus layer, (3) the replicated state machine layer, and (4) the application layer. At each of these layers, we identify known security threats, their origin as well as mitigation techniques or countermeasures. {\%} while we discuss the costs and impact of particular countermeasures. Although a similar model has already been used in previous work to serve as a general outline of the blockchain infrastructure, we adapt it for the purpose of studying security threats in this domain. Further, we propose a blockchain-specific version of the threat-risk assessment standard ISO/IEC 15408 by embedding the stacked model into this standard. Finally, following our stacked model and its categorization, we provide an extensive survey of blockchain-oriented and related research as well as its applications.},
+annote = {META{\{}
+[Study ID]
+6
+[Accepted]
+V
+[Reason]
+Attack vectors for many blockchain components.
+{\}}
+
+ME{\{}
+[Main categories]
+security
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+Security framework to analyse blockchain security.
+[Notes]
+
+[Summary of paper]
+List several attack vectors for several blockchain components.
+[Evaluation of paper]
+Ok paper, but I don't think the list of attack vectors is extensive enough.
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+8
+[Is the research method likely to have introduced significant bias?]
+5
+[Are the data collection methods adequately described?]
+3
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+7
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+-
+[How well is the scope for drawing wider inference explained?]
+10
+[How well has the approach to, and formulation of, analysis been conveyed?]
+10
+[How well was the diversity of perspective and context explored?]
+10
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1910.09775},
+author = {Homoliak, Ivan and Venugopalan, Sarad and Hum, Qingze and Reijsbergen, Daniel and Schumi, Richard and Szalachowski, Pawel},
+eprint = {1910.09775},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Homoliak et al. - 2019 - The Security Reference Architecture for Blockchains Towards a Standardized Model for Studying Vulnerabilities,.pdf:pdf},
+pages = {1--44},
+title = {{The Security Reference Architecture for Blockchains: Towards a Standardized Model for Studying Vulnerabilities, Threats, and Defenses}},
+url = {http://arxiv.org/abs/1910.09775},
+year = {2019}
+}
+@article{Kadhe2019,
+abstract = {Full nodes, which synchronize the entire blockchain history and independently validate all the blocks, form the backbone of any blockchain network by playing a vital role in ensuring security properties. On the other hand, a user running a full node needs to pay a heavy price in terms of storage costs. E.g., the Bitcoin blockchain size has grown over 215GB, in spite of its low throughput. The ledger size for a high throughput blockchain Ripple has already reached 9TB, and it is growing at an astonishing rate of 12GB per day! In this paper, we propose an architecture based on 'fountain codes', a class of erasure codes, that enables any full node to 'encode' validated blocks into a small number of 'coded blocks', thereby reducing its storage costs by orders of magnitude. In particular, our proposed "Secure Fountain (SeF)" architecture can achieve a near-optimal trade-off between the storage savings per node and the 'bootstrap cost' in terms of the number of (honest) storage-constrained nodes a new node needs to contact to recover the blockchain. A key technical innovation in SeF codes is to make fountain codes secure against adversarial nodes that can provide maliciously formed coded blocks. Our idea is to use the header-chain as a 'side-information' to check whether a coded block is maliciously formed while it is getting decoded. Further, the 'rateless property' of fountain codes helps in achieving high decentralization and scalability. Our experiments demonstrate that SeF codes tuned to achieve 1000x storage savings enable full nodes to encode the 191GB Bitcoin blockchain into 195MB on average. A new node can recover the blockchain from an arbitrary set of storage-constrained nodes as long as the set contains {\~{}}1100 honest nodes on average. Note that for a 1000x storage savings, the fundamental bound on the number of honest nodes to contact is 1000: we need about 10{\%} more in practice.},
+annote = {META{\{}
+[Study ID]
+35
+[Accepted]
+X
+[Reason]
+No relevant discussion on Rapidchain. Works similarly to the Rapidchain reed solomon erasure codes, but because of structural differences in Rapidchain the proposed codes would not be immidiatly applicable. States that these codes is only used for archival/full nodes, which rapidchain do not need. The authors do however state that these codes are more computationally efficient. But the computational complexity of these codes is not relevant to the total complexity of the protocol. 
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1906.12140},
+author = {Kadhe, Swanand and Chung, Jichan and Ramchandran, Kannan},
+eprint = {1906.12140},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kadhe, Chung, Ramchandran - 2019 - SeF A Secure Fountain Architecture for Slashing Storage Costs in Blockchains.pdf:pdf},
+title = {{SeF: A Secure Fountain Architecture for Slashing Storage Costs in Blockchains}},
+url = {http://arxiv.org/abs/1906.12140},
+year = {2019}
+}
+@misc{Choi,
+abstract = {Advances in blockchain technology have made a significant impact on a wide range of research areas due to the features such as transparency, decentralization and traceability. With the explosive growth of blockchain transactions, there has been a growing interest in improving the scalability of blockchain network. Sharding is one of the methods to solve this scalability problem by partitioning the network into several shards so that each shard can process the transactions in parallel. Ethereum places each transaction statically on a shard based on its account address without considering the complexity of the transaction or the load generated by the transaction. This causes the transaction load on each shard to be uneven, which makes the transaction throughput of the network decrease. In this paper, we propose a dynamic load balancing mechanism among Ethereum shards called D-GAS. The D-GAS dynamically balances the transaction load of each shard by relocating the accounts based on the gas consumption to maximize the transaction throughput. Ethereum gas is a unit that represents the amount of computational effort needed to execute operations in a transaction. Benchmarking results show that the D-GAS outperforms existing techniques by up to 12{\%} in transaction throughput and decreases the makespan of transaction latency by about 74{\%} under various conditions.},
+annote = {META{\{}
+[Study ID]
+45
+
+[Accepted]
+X
+
+[Reason]
+Preliminary version of {\#}45
+{\}}},
+author = {Kim, Sanghyeok and Song, Jeho and Woo, Sangyeon and Kim, Youngjae and Park, Sungyong},
+booktitle = {Proceedings - 2019 IEEE 4th International Workshops on Foundations and Applications of Self* Systems, FAS*W 2019},
+doi = {10.1109/FAS-W.2019.00052},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kim et al. - 2019 - Gas consumption-aware dynamic load balancing in ethereum sharding environments.pdf:pdf},
+isbn = {9781728124063},
+keywords = {Blockchain,Ethereum,Load balancing,Scalability,Sharding},
+pages = {188--193},
+title = {{Gas consumption-aware dynamic load balancing in ethereum sharding environments}},
+year = {2019}
+}
+@article{Kokoris-kogias,
+annote = {META{\{}
+[Study ID]
+20
+[Accepted]
+
+[Reason]
+
+{\}}
+
+ME{\{}
+[Main categories]
+
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+
+[Is the research method, process or design clearly stated?]
+
+[Is the research method likely to have introduced significant bias?]
+
+[Are the data collection methods adequately described?]
+
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+
+[Are negative findings presented?]
+
+[Are important effects overlooked?]
+
+[How credible are the findings?]
+
+[If credible, are they important?]
+
+[How well has knowledge or understanding been extended by the research?]
+
+[How well is the scope for drawing wider inference explained?]
+
+[How well has the approach to, and formulation of, analysis been conveyed?]
+
+[How well was the diversity of perspective and context explored?]
+
+[How clear and coherent is the research?]
+
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+
+{\}}},
+author = {Kokoris-kogias, Eleftherios},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kokoris-kogias - 2019 - Robust and Scalable Consensus for Sharded Distributed Ledgers.pdf:pdf},
+title = {{Robust and Scalable Consensus for Sharded Distributed Ledgers}},
+year = {2019}
+}
+@article{Kokoris-kogias2019,
+abstract = {In this paper, we present the first fully asynchronous distributed key generation (ADKG) algorithm as well as the first distributed key generation algorithm that can create keys with a dual (f, 2f + 1)−threshold that are necessary for scalable consensus (which so far needs a trusted dealer assumption). In order to create a DKG with a dual (f, 2f + 1)−threshold we first answer in the affirmative the open question posed by Cachin et al. [8] on how to create an AVSS protocol with recovery thresholds f + 1 {\textless} k ≤ 2f + 1, which is of independent interest. Our High-threshold-AVSS (HAVSS) uses an asymmetric bi-variate polynomial, where the secret shared is hidden from any set of k nodes but an honest node that did not participate in the sharing phase can still recover his share with only n − 2f shares, hence be able to contribute in the secret reconstruction. Another building block for ADKG is a novel Eventually Perfect Common Coin (EPCC) abstraction and protocol that enables the participants to create a common coin that might fail to agree at most f + 1 times (even if invoked a polynomial number of times). Using EPCC we implement an Eventually Efficient Asynchronous Binary Agreement (EEABA) in which each instance takes O(n 2 ) bits and O(1) rounds in expectation, except for at most f + 1 instances which may take O(n 4 ) bits and O(n) rounds in total. Using EEABA we construct the first fully Asynchronous Distributed Key Generation (ADKG) which has the same overhead and expected runtime as the best partially-synchronous DKG (O(n 4 ) words, O(n) rounds). As a corollary of our ADKG we can also create the first Validated Asynchronous Byzantine Agreement (VABA) in the authenticated setting that does not need a trusted dealer to setup threshold signatures of degree n − f. Our VABA has an overhead of expected O(n 2 ) words and O(1) time per instance after an initial O(n 4 ) words and O(n) time bootstrap via ADKG.},
+annote = {META{\{}
+[Study ID]
+15
+[Accepted]
+V
+[Reason]
+Creation of shared key 
+{\}}
+
+ME{\{}
+[Main categories]
+Cryptography
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+Not abaout bootstrapping
+[Summary of paper]
+First fully asynchronous distributed key generation and high-treshold asynchronous verifiable secret sharing. Eventually efficient asynchronous binary agreement. 
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+VSS 
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+9
+[Is the research method, process or design clearly stated?]
+7
+[Is the research method likely to have introduced significant bias?]
+6
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+-
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+10
+[How well is the scope for drawing wider inference explained?]
+-
+[How well has the approach to, and formulation of, analysis been conveyed?]
+8
+[How well was the diversity of perspective and context explored?]
+10
+[How clear and coherent is the research?]
+7
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+author = {Kokoris-kogias, Eleftherios and Spiegelman, Alexander and Malkhi, Dahlia and Abraham, Ittai},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kokoris-kogias et al. - 2019 - Bootstrapping Consensus Without Trusted Setup Fully Asynchronous Distributed Key Generation.pdf:pdf},
+keywords = {asynchronous consensus,distributed cryptography,public-key cryptography / threshold cryptography,secret sharing},
+number = {V},
+pages = {1--22},
+title = {{Bootstrapping Consensus Without Trusted Setup : Fully Asynchronous Distributed Key Generation}},
+url = {https://eprint.iacr.org/2019/1015.pdf},
+year = {2019}
+}
+@article{Li2018,
+abstract = {Today's blockchain designs suffer from a trilemma claiming that no blockchain system can simultaneously achieve decentralization, security, and performance scalability. For current blockchain systems, as more nodes join the network, the efficiency of the system (computation, communication, and storage) stays constant at best. A leading idea for enabling blockchains to scale efficiency is the notion of sharding: different subsets of nodes handle different portions of the blockchain, thereby reducing the load for each individual node. However, existing sharding proposals achieve efficiency scaling by compromising on trust - corrupting the nodes in a given shard will lead to the permanent loss of the corresponding portion of data. In this paper, we settle the trilemma by demonstrating a new protocol for coded storage and computation in blockchains. In particular, we propose PolyShard: ``polynomially coded sharding'' scheme that achieves information-theoretic upper bounds on the efficiency of the storage, system throughput, as well as on trust, thus enabling a truly scalable system. We provide simulation results that numerically demonstrate the performance improvement over state of the arts, and the scalability of the PolyShard system. Finally, we discuss potential enhancements, and highlight practical considerations in building such a system.},
+annote = {META{\{}
+[Study ID]
+4
+[Accepted]
+V
+[Reason]
+New concept for sharding
+{\}}
+
+ME{\{}
+[Main categories]
+coded sharding
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+Researchers knowledge not applicable. 
+[Research question or issue]
+
+[Notes]
+This coding provides computation redundancy to simultaneously provide security against erroneous results from malicious nodes
+
+[Summary of paper]
+Coded sharding takes several uncoded shards and mixes them with lagrange interpolation. Each shard then stores one of these coded shards, and computes on them. Replicates data and computational redudancy. 
+
+[Evaluation of paper]
+Researchers knowledge not applicable. 
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+6
+[Is the research method likely to have introduced significant bias?]
+-
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+-
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+5 | Incorrect statement that no other solution scale in security
+[If credible, are they important?]
+-
+[How well has knowledge or understanding been extended by the research?]
+-
+[How well is the scope for drawing wider inference explained?]
+-
+[How well has the approach to, and formulation of, analysis been conveyed?]
+-
+[How well was the diversity of perspective and context explored?]
+-
+[How clear and coherent is the research?]
+9
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1809.10361},
+author = {Li, Songze and Yu, Mingchao and Yang, Chien-Sheng and Avestimehr, A. Salman and Kannan, Sreeram and Viswanath, Pramod},
+eprint = {1809.10361},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Li et al. - 2018 - PolyShard Coded Sharding Achieves Linearly Scaling Efficiency and Security Simultaneously.pdf:pdf},
+pages = {1--12},
+title = {{PolyShard: Coded Sharding Achieves Linearly Scaling Efficiency and Security Simultaneously}},
+url = {http://arxiv.org/abs/1809.10361},
+year = {2018}
+}
+@article{Liu2019,
+abstract = {With features such as decentralization, consistency, tamper resistance, non-repudiation, and pseudonym, blockchain technology has the potential to strengthen the Internet of Things (IoT) significantly, thus opening an intriguing research area in the integration of blockchain and IoT. However, most existing blockchain schemes were not dedicated to the IoT ecosystem and hence could not meet the specific requirements of IoT. This paper aims to fix the gap. Inspired by Chainspace, a blockchain platform which could be applicable in IoT, VChain is proposed, a novel blockchain scheme suitable for IoT which is more secure, concrete, and practical compared with Chainspace. Specifically, in VChain, a two-layer BFT-based consensus protocol with HoneyBadger BFT protocol is proposed and a collective signature scheme as building blocks. The designs above allow for supporting faulty-shards-tolerance and asynchronous network model, which could not be sustained in Chainspace, and keeping high efficiency as well. Moreover, the sharding strategy presented in VChain, different from that in RapidChain, which adopts the energy-consuming PoW mechanism for sharding, is environmentfriendly and thus makes VChain fit for IoT well. Last but not least, VChain also inherits the merits of Chainspace to separate the execution and verification of smart contracts for privacy.},
+annote = {META{\{}
+[Study ID]
+41
+[Accepted]
+X
+[Reason]
+New nodes can only join the system at the start of a new epoch, same as in Rapidchain, contrary to their statements. Rapidchain works indipendantly of the underlying identity blockchain structure PoW/PoS, which makes their statement about Rapidchain invalid. Due to the fact that no PoW is required, an advesary could maybe pick their adress to target shards directly in a targeted attack. Shard reconfiguration scrambles all nodes similar to omniledger(?). Lacking security analysis of their proposed scheme.
+{\}}
+
+ME{\{}
+[Main categories]
+
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+
+[Is the research method, process or design clearly stated?]
+
+[Is the research method likely to have introduced significant bias?]
+
+[Are the data collection methods adequately described?]
+
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+
+[Are negative findings presented?]
+
+[Are important effects overlooked?]
+
+[How credible are the findings?]
+
+[If credible, are they important?]
+
+[How well has knowledge or understanding been extended by the research?]
+
+[How well is the scope for drawing wider inference explained?]
+
+[How well has the approach to, and formulation of, analysis been conveyed?]
+
+[How well was the diversity of perspective and context explored?]
+
+[How clear and coherent is the research?]
+
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+
+{\}}},
+author = {Liu, Hongyang and Shen, Feng and Liu, Zhiqiang and Long, Yu and Liu, Zhen and Sun, Shifeng and Tang, Shuyang and Gu, Dawu},
+doi = {10.1109/TrustCom/BigDataSE.2019.00078},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Liu et al. - 2019 - A secure and practical blockchain scheme for IoT.pdf:pdf},
+isbn = {9781728127767},
+journal = {Proceedings - 2019 18th IEEE International Conference on Trust, Security and Privacy in Computing and Communications/13th IEEE International Conference on Big Data Science and Engineering, TrustCom/BigDataSE 2019},
+keywords = {BIoT,Blockchain,Sharding,Two-Layer-BFT},
+pages = {538--545},
+publisher = {IEEE},
+title = {{A secure and practical blockchain scheme for IoT}},
+year = {2019}
+}
+@article{Liu2020,
+abstract = {Committee-based blockchain consensus protocols combine permissionless consensus and classical state machine replication protocols to process transactions efficiently. Due to corruptions by the adversary, reconfiguration mechanisms have to be deployed to update committee members. How to select enough fraction of honest nodes is a key issue that needs to be addressed. In this paper, we propose a fair selection protocol for reconfiguring a committee in a permissionless blockchain. Our fair selection protocol consists of two main phases: the mining process and the confirmation of the new nodes list. We analyze the impact of the network latency and give a rigorous proof of the mining process. Furthermore, we point out that in the process of confirming the new nodes list, “node censorship” by a malicious leader could lead to an increase in the proportion of new nodes controlled by an adversary. We propose a threshold-vote rule to defend against the node censorship attack and prove the security of the entire protocol, including safety and liveness properties. Our fair selection protocol could be implemented in committee-based permissionless blockchains according to different demands with proper parameters.},
+annote = {META{\{}
+[Study ID]
+28
+[Accepted]
+X
+[Reason]
+Not applicable to Rapidchain components, trivial or non-important results, and possible equivocation. 
+{\}}},
+author = {Liu, Yizhong and Liu, Jianwei and Zhang, Zongyang and Yu, Hui},
+doi = {10.1016/j.cose.2020.101718},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Liu et al. - 2020 - A fair selection protocol for committee-based permissionless blockchains.pdf:pdf},
+issn = {01674048},
+journal = {Computers and Security},
+keywords = {Committee reconfiguration,Committee-based blockchain,Consensus,Fairness,Mining},
+publisher = {Elsevier Ltd},
+title = {{A fair selection protocol for committee-based permissionless blockchains}},
+volume = {91},
+year = {2020}
+}
+@article{Manshaei2018,
+abstract = {Low transaction throughput and poor scalability are significant issues in public blockchain consensus protocols, such as Bitcoins. Recent research efforts in this direction have proposed shard-based consensus protocols where the key idea is to split the transactions among multiple committees (or shards), which then process these shards or set of transactions in parallel. Such a parallel processing of disjoint sets of transactions or shards by multiple committees significantly improves the overall scalability and transaction throughout of the system. However, one significant research gap is a lack of understanding of the strategic behavior of rational processors within committees in such shard-based consensus protocols. Such an understanding is critical for designing appropriate incentives that will foster cooperation within committees and prevent free-riding. In this paper, we address this research gap by analyzing the behavior of processors using a game-theoretic model, where each processor aims at maximizing its reward at a minimum cost of participating in the protocol. We first analyze the Nash equilibria in an N-player static game model of the sharding protocol. We show that depending on the reward sharing approach employed, processors can potentially increase their payoff by unilaterally behaving in a defective fashion, thus resulting in a social dilemma. In order to overcome this social dilemma, we propose a novel incentive-compatible reward sharing mechanism to promote cooperation among processors. Our numerical results show that achieving a majority of cooperating processors (required to ensure a healthy state of the blockchain network) is easier to achieve with the proposed incentive-compatible reward sharing mechanism than with other reward sharing mechanisms.},
+annote = {META{\{}
+[Study ID]
+2
+[Accepted]
+V
+[Reason]
+Model of comitee based sharding, game-theory, and incentive mechanism. 
+{\}}
+
+ME{\{}
+[Main categories]
+Incentive mechanisms
+[Classification]
+model | game-theory | incentive mechanism
+[Themes]
+
+[Metrics or measures]
+Byzantine adversary: arbitrarily malicious, rational: honest but selfish 
+
+[Quality Assesment discussion]
+Great paper
+
+[Research question or issue]
+One significant research gap is a lack of understanding of the
+strategic behavior of rational processors within committees.
+
+[Notes]
+C{\^{}}m fixed costs = identity generation / POW, C{\^{}}O optional costs = C{\^{}}f intra commitee consensus participation, c{\^{}}v transaction validation cost. x{\_}j the set you agree to, y{\_}j the set the shard agrees to. 
+
+[Summary of paper]
+Creates a model of comitee-based sharding, presents a game-theory game on this model, and presents a novel incentive mechanism based on a coordinator.
+
+[Evaluation of paper]
+Great paper but must be adjusted for the threat model in rapidchain. Some assumptions make it hard to generalize. 
+
+[Main findings]
+Model of comitte based sharding protocols
+
+[Rapidchain specifics]
+This paper uses a "final comitee" that recives many shards and combine them to one block. This is different from the design of rapidchain. Comments on the lack of clarity in Rapidchain (and others), therefore assume that a new epoch block cannot be appended if one shard fails. 
+
+[Rapidchain applications]
+Incentive mechanism
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+10
+[Is the research method likely to have introduced significant bias?]
+8
+[Are the data collection methods adequately described?]
+9
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+10
+[Is there any statistical methods applied and were they justified?]
+0
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+10
+[Are negative findings presented?]
+7
+[Are important effects overlooked?]
+5
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+10
+[How well does the evaluation address its original aims and purpose?]
+10
+[How well is the scope for drawing wider inference explained?]
+9
+[How well has the approach to, and formulation of, analysis been conveyed?]
+10
+[How well was the diversity of perspective and context explored?]
+10
+[How clear are the links between data, interpretation and conclusions – i.e. how well can the route to any conclusions be seen?]
+9
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+10
+[Do the study measures allow the research questions to be answered?]
+10
+[Are the measures used in the study the most relevant ones for answering the research questions?]
+10
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+10
+[Are all study questions answered?]
+10
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1809.07307},
+author = {Manshaei, Mohammad Hossein and Jadliwala, Murtuza and Maiti, Anindya and Fooladgar, Mahdi},
+doi = {10.1109/ACCESS.2018.2884764},
+eprint = {1809.07307},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Manshaei et al. - 2018 - A Game-Theoretic Analysis of Shard-Based Permissionless Blockchains.pdf:pdf},
+isbn = {8415683111},
+issn = {21693536},
+journal = {IEEE Access},
+keywords = {Sharding,and incentive design,blockchain,cooperation,game theory},
+pages = {78100--78112},
+publisher = {IEEE},
+title = {{A Game-Theoretic Analysis of Shard-Based Permissionless Blockchains}},
+volume = {6},
+year = {2018}
+}
+@article{Manuskin2019,
+abstract = {Cryptocurrencies, which promise to become a global means of money transactions, are typically implemented with blockchain protocols. Blockchains utilize a variety of consensus algorithms, and their performance is advancing rapidly. However, a bottleneck remains: each node processes all transactions in the system. We present Ostraka, a blockchain node architecture that scales linearly with the available resources. Ostraka shards (parallelizes) the nodes themselves, embracing the fact that major actors have the resources to deploy multi-server nodes. We show that, in common scenarios, previous sharding solutions have the same property, requiring most node operators resources to process almost all blockchain transactions, while reducing system security. We prove that replacing a unified node with a sharded Ostraka node does not affect the security of the underlying consensus mechanism and that Ostraka does not expose additional vulnerabilities due to its sharding. We identify a partial denial-of-service attack that is exposed by previous sharding solutions. We evaluate analytically and experimentally block propagation and processing in various settings. Ostraka achieves linear scaling when the network allows it, unlike previous systems that require costly coordination for transactions that affect multiple shards. In our experiments, Ostraka nodes reach a rate of nearly 400,000 transactions per second with 64 shards, opening the door to truly high-frequency blockchains.},
+annote = {META{\{}
+[Study ID]
+12
+[Accepted]
+V
+[Reason]
+DoS, but this solution favours large actors instead of many small. You have to have enough resources in order to be a node, this may indicate a 10 times decrease in number of nodes according to the authors. Due to this the rest of the paper is not included. 
+{\}}
+
+ME{\{}
+[Main categories]
+Sharding | protocol
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+-
+[Notes]
+
+[Summary of paper]
+Introduces a new sharding protocol but the relevant part only discusses DoS. 
+[Evaluation of paper]
+The relevant part is interesting, but lacks discussion and comprehensivness.
+[Main findings]
+
+[Rapidchain specifics]
+DoS | security
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+-
+[Is the research method likely to have introduced significant bias?]
+6
+[Are the data collection methods adequately described?]
+0
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+4
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+2 | no mention of potenial incentive
+[How credible are the findings?]
+10
+[If credible, are they important?]
+5
+[How well has knowledge or understanding been extended by the research?]
+3
+[How well is the scope for drawing wider inference explained?]
+-
+[How well has the approach to, and formulation of, analysis been conveyed?]
+-
+[How well was the diversity of perspective and context explored?]
+-
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1907.03331},
+author = {Manuskin, Alex and Mirkin, Michael and Eyal, Ittay},
+eprint = {1907.03331},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Manuskin, Mirkin, Eyal - 2019 - Ostraka Secure Blockchain Scaling by Node Sharding.pdf:pdf},
+title = {{Ostraka: Secure Blockchain Scaling by Node Sharding}},
+url = {http://arxiv.org/abs/1907.03331},
+year = {2019}
+}
+@article{Matzutt2020,
+annote = {META{\{}
+[Study ID]
+16
+[Accepted]
+V
+[Reason]
+Checkpoint
+{\}}
+
+ME{\{}
+[Main categories]
+Checkpoint
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+Checkpoint
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+10
+[Is the research method likely to have introduced significant bias?]
+8
+[Are the data collection methods adequately described?]
+10
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+10
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+10
+[Are negative findings presented?]
+8
+[Are important effects overlooked?]
+8
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+8
+[How well is the scope for drawing wider inference explained?]
+10
+[How well has the approach to, and formulation of, analysis been conveyed?]
+8
+[How well was the diversity of perspective and context explored?]
+10
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+10
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+8
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {arXiv:2004.06911v1},
+author = {Matzutt, Roman and Kalde, Benedikt and Pennekamp, Jan and Drichel, Arthur and Henze, Martin and Wehrle, Klaus},
+eprint = {arXiv:2004.06911v1},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Matzutt et al. - 2020 - How to Securely Prune Bitcoin ' s Blockchain.pdf:pdf},
+title = {{How to Securely Prune Bitcoin ' s Blockchain}},
+year = {2020}
+}
+@article{Okanami2020,
+annote = {META{\{}
+[Study ID]
+27
+[Accepted]
+X
+[Reason]
+Ethereum 2.0 accounts can choose to change shards, while this is not a option in Rapidchain. This paper focuses on that aspect and the results is therefore not relevant for the rapidchain protocol.
+{\}}},
+author = {Okanami, Naoya},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Okanami - 2020 - Load Balancing for Sharded Blockchains.pdf:pdf},
+keywords = {blockchain,game theory,heuristics,load balancing,sharding,simulated annealing},
+pages = {1--13},
+title = {{Load Balancing for Sharded Blockchains}},
+year = {2020}
+}
+@article{Rajab2020,
+abstract = {Bitcoin's single leader consensus protocol (Nakamoto consensus) suffers from significant transaction throughput and network scalability issues due to the computational requirements of it Proof-of-Work (PoW) based leader selection strategy. To overcome this, committee-based approaches (e.g., Elastico) that partition the outstanding transaction set into shards and (randomly) select multiple committees to process these transactions in parallel have been proposed and have become very popular. However, by design these committee or shard-based blockchain solutions are easily vulnerable to the Sybil attacks, where an adversary can easily compromise/manipulate the consensus protocol if it has enough computational power to generate multiple Sybil committee members (by generating multiple valid node identifiers). Despite the straightforward nature of these attacks, they have not been systematically analyzed. In this paper, we fill this research gap by modelling and analyzing Sybil attacks in a representative and popular shard-based protocol called Elastico. We show that the PoW technique used for identifier or ID generation in the initial phase of the protocol is vulnerable to Sybil attacks, and a node with high hash-power can generate enough Sybil IDs to successfully compromise Elastico. We analytically derive conditions for two different categories of Sybil attacks and perform numerical simulations to validate our theoretical results under different network and protocol parameters.},
+annote = {META{\{}
+[Study ID]
+17
+[Accepted]
+V
+[Reason]
+Sybil attacks
+{\}}
+
+ME{\{}
+[Main categories]
+Sybil resistance
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+Sybil resistance
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+8
+[Is the research method likely to have introduced significant bias?]
+5
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+8
+[Are negative findings presented?]
+9
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+9
+[If credible, are they important?]
+6
+[How well has knowledge or understanding been extended by the research?]
+8
+[How well is the scope for drawing wider inference explained?]
+8
+[How well has the approach to, and formulation of, analysis been conveyed?]
+8
+[How well was the diversity of perspective and context explored?]
+8
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+3
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {2002.06531},
+author = {Rajab, Tayebeh and Manshaei, Mohammad Hossein and Dakhilalian, Mohammad and Jadliwala, Murtuza and Rahman, Mohammad Ashiqur},
+eprint = {2002.06531},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Rajab et al. - 2020 - On the Feasibility of Sybil Attacks in Shard-Based Permissionless Blockchains.pdf:pdf},
+title = {{On the Feasibility of Sybil Attacks in Shard-Based Permissionless Blockchains}},
+url = {http://arxiv.org/abs/2002.06531},
+year = {2020}
+}
+@article{Sonnino2019,
+abstract = {We present a family of replay attacks against sharded distributed ledgers, that target cross-shard consensus protocols, such as the recently proposed Chainspace and Omniledger. They allow an attacker, with network access only, to double-spend or lock resources with minimal efforts. The attacker can act independently without colluding with any nodes, and succeed even if all nodes are honest; most of the attacks can also exhibit themselves as faults under periods of asynchrony. These attacks are effective against both shard-led and client-led cross-shard consensus approaches. Finally, we present Byzcuit - a new cross-shard consensus protocol that is immune to those attacks. We implement a prototype of Byzcuit and evaluate it on a real cloud-based testbed, showing that our defenses impact performance minimally, and overall performance surpasses previous works.},
+annote = {META{\{}
+[Study ID]
+30
+[Accepted]
+X
+[Reason]
+Incompatible protocols. Focused on atomic cross-chain protocol which Rapidchain does not have. Replay attacks can anyways be partly avoided using nonces in messages.
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {1901.11218},
+author = {Sonnino, Alberto and Bano, Shehar and Al-Bassam, Mustafa and Danezis, George},
+eprint = {1901.11218},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Sonnino et al. - 2019 - Replay Attacks and Defenses Against Cross-shard Consensus in Sharded Distributed Ledgers.pdf:pdf},
+title = {{Replay Attacks and Defenses Against Cross-shard Consensus in Sharded Distributed Ledgers}},
+url = {http://arxiv.org/abs/1901.11218},
+year = {2019}
+}
+@article{Suzuki2003,
+abstract = {This paper describes our research effort to design, implement and deploy a scalable infrastructure for autonomous adaptive agents running on the Internet. We have designed a network application architecture, called the Bio-Networking Architecture, which models agents after several biological concepts and mechanisms, and implemented a platform software to host the architecture on the Internet. The platform aids developing and executing large-scale, highly distributed and dynamic network applications, each of which is composed of the biologically-inspired software agents, by abstracting low-level networking/operating details and providing a rich set of runtime services. We overview several key features of the agents in our architecture, and describe the design and implementation of the proposed platform, showing how the platform satisfies a set of functional requirements derived from the features of our agents. We also present some measurement results to examine scalability and efficiency of the platform.},
+annote = {META{\{}
+[Study ID]
+36
+[Accepted]
+X
+[Reason]
+One validator per shard, where state is not further replicated, makes this not compatible with comittee based sharding. 
+{\}}},
+author = {Suzuki, Junichi and Suda, Tatsuya},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Suzuki, Suda - 2003 - Design and Implementation of an Scalable Infrastructure for Autonomous Adaptive Agents.pdf:pdf},
+isbn = {088986392X},
+journal = {Proceedings of the IASTED International Conference on Parallel and Distributed Computing and Systems},
+keywords = {Agent platform,Autonomous adaptive agents,Distributed computing software,Middleware,Software agents},
+number = {2},
+pages = {594--603},
+title = {{Design and Implementation of an Scalable Infrastructure for Autonomous Adaptive Agents}},
+volume = {15},
+year = {2019}
+}
+@article{Team1899,
+annote = {META{\{}
+[Study ID]
+13
+[Accepted]
+V
+[Reason]
+Builds on Rapidchain
+{\}}
+
+ME{\{}
+[Main categories]
+Protocol
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+1/4 total, 1/3 shard, 1000 year to failure
+[Summary of paper]
+
+[Evaluation of paper]
+Great paper, but since it is a white-paper, its results cannot be trusted. 
+[Main findings]
+
+[Rapidchain specifics]
+Incentive mechanism | security | randomness | codes | voting power
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+7
+[Is the research method likely to have introduced significant bias?]
+8
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+-
+[Are negative findings presented?]
+10
+[Are important effects overlooked?]
+8
+[How credible are the findings?]
+5
+[If credible, are they important?]
+9
+[How well has knowledge or understanding been extended by the research?]
+9
+[How well is the scope for drawing wider inference explained?]
+-
+[How well has the approach to, and formulation of, analysis been conveyed?]
+-
+[How well was the diversity of perspective and context explored?]
+-
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+9
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+10
+{\}}},
+author = {Team, Harmony},
+doi = {10.1001/jama.1899.02450530051008},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Team - 1899 - Harmony.pdf:pdf},
+issn = {23768118},
+journal = {Journal of the American Medical Association},
+number = {1},
+pages = {45--46},
+title = {{Harmony}},
+volume = {XXXIII},
+year = {2019}
+}
+@article{Wang2019b,
+abstract = {Blockchain is a distributed and decentralized ledger for recording transactions. It is maintained and shared among the participating nodes by utilizing cryptographic primitives. A consensus protocol ensures that all nodes agree on a unique order in which records are appended. However, current blockchain solutions are facing scalability issues. Many methods, such as Off-chain and Directed Acyclic Graph (DAG) solutions, have been proposed to address the issue. However, they have inherent drawbacks, e.g., forming parasite chains. Performance, such as throughput and latency, is also important to a blockchain system. Sharding has emerged as a good candidate that can overcome both the scalability and performance problems in blockchain. To date, there is no systematic work that analyzes the sharding protocols. To bridge this gap, this paper provides a systematic and comprehensive review on blockchain sharding techniques. We first present a general design flow of sharding protocols and then discuss key design challenges. For each challenge, we analyze and compare the techniques in state-of-the-art solutions. Finally, we discuss several potential research directions in blockchain sharding.},
+annote = {META{\{}
+[Study ID]
+7
+[Accepted]
+V
+[Reason]
+Discussion on Rapidchain
+{\}}
+
+ME{\{}
+[Main categories]
+Survey
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+Systemazation of Knowledge on sharding
+[Notes]
+
+[Summary of paper]
+-
+[Evaluation of paper]
+Great paper that compares several protocols. 
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+7
+[Is the research method likely to have introduced significant bias?]
+5
+[Are the data collection methods adequately described?]
+1
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+10
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+10
+[If credible, are they important?]
+10
+[How well has knowledge or understanding been extended by the research?]
+10
+[How well is the scope for drawing wider inference explained?]
+10
+[How well has the approach to, and formulation of, analysis been conveyed?]
+10
+[How well was the diversity of perspective and context explored?]
+10
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+author = {Wang, Gang and Shi, Zhijie Jerry and Nixon, Mark and Han, Song},
+doi = {10.1145/3318041.3355457},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Wang et al. - 2019 - Sok Sharding on blockchain.pdf:pdf},
+isbn = {9781450367325},
+journal = {AFT 2019 - Proceedings of the 1st ACM Conference on Advances in Financial Technologies},
+keywords = {Blockchain,Consensus Protocol,Sharding,SoK},
+pages = {41--61},
+title = {{Sok: Sharding on blockchain}},
+year = {2019}
+}
+@article{Wang2019,
+abstract = {The incumbent sharding schemes usually assign the nodes to different committees randomly to meet the demands of security and efficiency at the same time. For example, Elastico protocol obtains a random value by letting the node perform proof of work, and then uses this value for sharding. However, the strategy of random sharding ignores the objective differences between nodes, causing performance gaps between different committees in blockchain. This creates a bottleneck in the transaction throughput of the blockchain. In the paper, we propose a node rating based sharding scheme for blockchain system called NRSS. The key idea of NRSS is to evaluate nodes in the network by both the speeds and results of transactions verification before, and then assign them into different committees by balancing the score to reduce the performance gap between committees and increase the speed of transaction process. We implement NRSS in a local blockchain system, and the experiment results show that NRSS can increase the sharding effect of a blockchain, with an average throughput increase of 32.2{\%} in the simulation environment where the node performance difference is up to 75{\%}, depending on the number of nodes in the committee that are preset in the blockchain.},
+annote = {META{\{}
+[Study ID]
+40
+[Accepted]
+X
+[Reason]
+The key idea behind a secure sharding strategy is to limit the abbility of a node to choose which committee it will belong to. The idea of sharding based on performance and latency is prone to attacks since nodes can emulate different speeds to trick the system. 
+{\}}},
+author = {Wang, Jianrong and Zhou, Yangyifan and Li, Xuewei and Xu, Tianyi and Qiu, Tie},
+doi = {10.1109/ICPADS47876.2019.00050},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Wang et al. - 2019 - A Node rating based sharding scheme for blockchain.pdf:pdf},
+isbn = {9781728125831},
+issn = {15219097},
+journal = {Proceedings of the International Conference on Parallel and Distributed Systems - ICPADS},
+keywords = {Blockchain,Distributed System,Performance Rating,Sharding Technology},
+pages = {302--309},
+title = {{A Node rating based sharding scheme for blockchain}},
+volume = {2019-Decem},
+year = {2019}
+}
+@article{Wang2019a,
+abstract = {Cryptocurrencies have provided a promising infrastructure for pseudonymous online payments. However, low throughput has significantly hindered the scalability and usability of cryptocurrency systems for increasing numbers of users and transactions. Another obstacle to achieving scalability is the requirement for every node to duplicate the communication, storage, and state representation of the entire network. In this paper, we introduce the Asynchronous Consensus Zones, which scales blockchain system linearly without compromising decentralization or security. We achieve this by running multiple independent and parallel instances of single-chain consensus systems termed as zones. The consensus happens independently within each zone with minimized communication, which partitions the workload of the entire network and ensures a moderate burden for each individual node as the network grows. We propose eventual atomicity to ensure transaction atomicity across zones, which achieves the efficient completion of transactions without the overhead of a two-phase commit protocol. Additionally, we propose Chu-ko-nu mining to ensure the effective mining power in each zone to be at the same level of the entire network, making an attack on any individual zone as hard as that on the full network. Our experimental results show the effectiveness of our work: on a testbed including 1,200 virtual machines worldwide to support 48,000 nodes, our system delivers 1,000× throughput and 2,000× capacity over the Bitcoin and Ethereum networks.},
+annote = {META{\{}
+[Study ID]
+42
+[Accepted]
+X
+[Reason]
+No novel contributions related to comitee based sharding. The concept of sharding based on locality is suceptable for targeted attacks on a single shard. 
+{\}}},
+author = {Wang, Jiaping and Wang, Hao},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Wang, Wang - 2019 - Monoxide Scale out blockchain with asynchronous consensus zones.pdf:pdf},
+isbn = {9781931971492},
+journal = {Proceedings of the 16th USENIX Symposium on Networked Systems Design and Implementation, NSDI 2019},
+pages = {95--112},
+title = {{Monoxide: Scale out blockchain with asynchronous consensus zones}},
+year = {2019}
+}
+@article{Wang,
+abstract = {Blockchain brings dawn to decentralized applications which coordinate correct computations without a prior trust. However, existing scalable on-chain frameworks are incompetent in dealing with intensive validation. On the one hand, duplicated execution pattern leads to limited throughput and unacceptable expenses. On the other hand, there lack fair and secure incentive mechanisms allocating rewards according to the actual workload of validators, thus deriving bad dilemmas among rational participants and inducing effective attacks from shrewd adversaries. While most solutions rely on off-chain patterns to sidestep the shackles, it further introduces unexpected issues in applicability, fairness and brittle dependency on interactive cooperation. The intrinsic bottleneck of backbone has never been drastically broken. This work presents Lever, the first scalable on-chain framework which supports intensive validation, meanwhile achieves validity , incentive compatibility and cost-efficiency tolerance of f {\textless} n/4 Byzantine participants. Lever firstly integrates the evaluation of complexity into the correctness of transaction, thoroughly de-coupling intensive validation from regular Byzantine consensus. Significant scalability is then achieved by launching few rounds of novel validation-challenge game between potential adversaries and rational stakeholders; compelling incentive mechanism effectively transfers deposits of adversary to specialized rewards for honest validators, therefore allows the user to lever sufficient endorsement for verification with minimum cost. Combined with game-theoretic insights, a backstop protocol is designed to ensure finality and validity of the framework, breaking through the famous Verifier's Dilemma. Finally, we streamline Lever under the efficient architecture of sharding, which jointly shows robust to conceivable attacks on validation and performs outstanding ability to purify Byzantine participants. Experimental results show that Lever vastly improves the throughput and reduces expenses of intensive validation with slight compromise in latency.},
+annote = {META{\{}
+[Study ID]
+9
+[Accepted]
+V
+[Reason]
+Incentive mechanism, rest of paper is not relevant. 
+{\}}
+
+ME{\{}
+[Main categories]
+Incentive mechanism
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+Low score due to very bad "clear and coherent" language. Non-scientific language and possible use of equivocation several places. This results in doubts about the credibility of the research as it's difficult to understand and judge details. 
+
+[Research question or issue]
+-
+[Notes]
+
+[Summary of paper]
+Incentive mechanism using staking. Rest of paper is not relevant. 
+[Evaluation of paper]
+introduces some interseting concepts and results, but with doubting credibility.
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+[Is the research method, process or design clearly stated?]
+7
+[Is the research method likely to have introduced significant bias?]
+5
+[Are the data collection methods adequately described?]
+-
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+-
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+7
+[Are negative findings presented?]
+-
+[Are important effects overlooked?]
+5
+[How credible are the findings?]
+5
+[If credible, are they important?]
+-
+[How well has knowledge or understanding been extended by the research?]
+7
+[How well is the scope for drawing wider inference explained?]
+5
+[How well has the approach to, and formulation of, analysis been conveyed?]
+2
+[How well was the diversity of perspective and context explored?]
+6
+[How clear and coherent is the research?]
+0
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+-
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+-
+{\}}},
+author = {Wang, Mingming and Wu, Qianhong},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Wang, Wu - Unknown - Lever Breaking the Shackles of Scalable On-chain Validation.pdf:pdf},
+title = {{Lever: Breaking the Shackles of Scalable On-chain Validation}},
+year = {2019}
+}
+@article{ErtugKIYASOGLU2019,
+abstract = {Biobased fibres of cellulose acetate butyrate (CAB) and cellulose nanocrystals (CNC) and triethyl citrate (TEC) as plasticiser were prepared by melt spinning. To obtain homogeneous dispersion of CNC, two different dispersion techniques were studied. In the first, the water content of the CNC suspension was reduced and exchanged to ethanol using centrifugation. In the second, the water in the CNC suspension was completely exchanged to ethanol by sol-gel process. Results showed that tensile modulus and tensile strength of the nanocomposite fibres produced with the first technique were lower than CAB-TEC fibres, but the fibres produced by the sol-gel process showed an increase in the tensile modulus and had no decrease in the strength. Optical microscopy of the fibres indicated a few aggregations on the sol-gel prepared materials. The results indicate that the sol-gel process is enhancing the dispersion of CNC and can be a suitable way to prepare nanocomposite fibres. {\textcopyright} Institute of Materials, Minerals and Mining 2014.},
+annote = {META{\{}
+[Study ID]
+33
+[Accepted]
+X
+[Reason]
+Different sharding paradigm. Concept where a transaction with each validation grows it's proof. 
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1011.1669v3},
+author = {Wilsdon, James},
+doi = {10.1109/MTAS.2004.1371634},
+eprint = {arXiv:1011.1669v3},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Wilsdon - 2004 - The politics of small things Nanotechnology, risk, and uncertainty.pdf:pdf},
+isbn = {6103544947},
+issn = {02780097},
+journal = {IEEE Technology and Society Magazine},
+keywords = {"hi-pot",(),*Conflict of Interest,*Ethics,-Mobile learning,0 positivismo e uma,05,1994,2,2015,2015 the authors,21 century,21 st Century Learning,21 st Century Skills,222,3,45,72,A/D converter,AC Hipot,ACWV),Academic Level,Acid hydrolysis,Administra{\c{c}}{\~{a}}o Universit{\'{a}}ria. Administra{\c{c}}{\~{a}}o P{\'{u}}blica,Adsorption,Aerogel,Aerogels,Age Factors,Ageism,Aging,Alginate,Alignment,And adolescent,Antibacterial bandages,Apparent resistivity,Application,Architectural contracts,Attendance,Attitude,Attitude of Health Personnel,Belo Horizonte,Bioactive polymers,Biobased materials,Biodegradable polymer nanocomposites,Biodegradation,Bioengineering,Biomedical,Biomedical application,Biopolymers,Biosensor,Blackboard,Blackboard clicks,Blackboard hits,Blended Learning,Blends,Bone-cartilage regeneration,CDEGS software,CEP 30380-530,CPLD,Cell viability,Cellulases,Cellulose,Cellulose Nano Whisker,Cellulose nanocrystal,Cellulose nanocrystals,Cellulose nanocrystals hydrogel,Cellulose nanofiber,Cellulose nanofibers,Cellulose nanofibres,Cellulose nanomaterials,Cellulose whiskers,Cellulosic nanofibers,Characteristics and Requirements,Characterization,Chopping overvoltages,Cochrane collaboration,Commons,Communication,Competence,Composite processing,Composites,Computer Science,Condition assessment,Cons,Controlled release,Correspond{\^{e}}ncia para: Rosana F Sampaio,Cosmopolitics,Crosslinking,Delamination of fibres,Dental application,Design thinking,Dielectric withstand voltage test,Dielectrics,Digestion,Digital learning module,Dispersion,Distributed generation (DG),Drug Industry/*ethics,Drug delivery,Drugcell delivery,E-learning technology,Education,Education Lifeloop Management,Educational Modeling,Effects of testing,Elastomeric Polymer,Electrospinning,Electrospinning technique,Empirical evaluation,Engagement,Engineering contracts,Europe,Evidence-based practice,Experienced nurse,Experimentation,Extrusion compounding,Fall-of-potential method,Fibre spinning,Filler,Film strength,Flow,Food,Food contact materials,Food eco-packaging,Food industry,Food packaging,Food packaging nanocomposite,Food safety,Framework Conceitual,Front End da Inova{\c{c}}{\~{a}}o,Functional food,Functional nanofibers,Functionalization,Garrard,Gas barrier,Grid with rods,Grid without rods,Ground resistance,HTS cable,Hardware in the Loop Education,Health personnel,Heavy metal ions,Heterogeneity,High potential (Hipot) test,High voltage,Higher Education,Higher education,Homogenization,Human in the Loop Education,Humans,Hydrogels,IEEE C57.12.00(TM),IEEE Std C57.12.00-2010 Revision,IEEE Std C57.12.00-2015,IEEE standards,Ice-templating,Identifica{\c{c}}{\~{a}}o de Oportunidades,Implementation research,Industri pembuatan,Information commons,Inova{\c{c}}{\~{a}}o,Inta,Intellectual capital,Interactions,Interface,Interprofessional Relations/*ethics,Ionic liquids,Isolation techniques,Issue 47,J. Rizk,Jung,Knowledge management,Librarianship,Lightning impulse withstand voltage (LIWV),Lincolin Arsyad,Liquid immersed power distribution,Literature review,LlpA,Luxemburgo,M. Nassereddine,MALT program,MG-Brasil,MOOC,MSN research,Mechanical,Mechanical properties,Mechanical requirements,Melt strength enhancer,Metal nanoparticles,Methodology,Microcellulose,Microcrystalline cellulose,Microfibrillated cellulose (MFC),Microstructure,Mixed methods research,Mode 2,Moisture Content,Motivacion para el aprendizaje,Municipal solid waste,NCC preparation,Nanoadditive,Nanocellulose,Nanocomposites,Nanocrystal,Nanocrystalline cellulose,Nanofiber,Nanofibers,Nanofibrillated cellulose (NFC),Nanomaterials,Nanoparticles,Natural fibres,New nursing graduates,Nursing,Nursing Methodology Research,Nursing Methodology Research: organization {\&} admin,Oil-filled transformer,Optimization,Organizational Objectives,Organizational knowledge,Oxygen permeability,PDEV,PDIV,PRISMA,Paclitaxel,Partial Discharge,Partial discharge,Particle size,Paulo Freire,Percolation,Performance,Philosophy,Phosphorylation,Physicians/*ethics,Piaget,Plasticizer,Poly (vinyl alcohol),Poly(hydroxybutyrate),Poly(lactic acid),Polylactic acid,Polylactic acid (PLA),Polymer nanocomposite,Polymer nanocomposites,Polymer-filler interaction,Polypropylene,Polyurethane,Porous materials,Power distribution,Power frequency withstand voltage (PFWV,Preparation,Process evaluations,Process-induced microstructures,Properties,Proton conductivity,Purification,Qualitative Research,Qualitative approach,Qualitative evidence synthesis,Qualitative health research,Qualitative research,Quantitative approach,REACH,Recycling,Regulators,Reinforcement,Reinforcements,Relevance,Reporting,Reprocess,Research,Research Design,Research Meth- ods,Research Personnel,Research Personnel: psychology,Research Support as Topic/*ethics,Research approach,Research evaluation,Response surface methodology,Rheological properties,Rheology,Rice husk,Rotatividade de Pessoal. Turnover. Gest{\~{a}}o de Pesso,Rua Juvenal dos Santos,Rubber,Safety,Scaffold,School of the future,Science,Scientific Methodologies,Sesbania Javanica,Silver nanoparticles,Social Network Analysis,Software in Loop Education,Soil resistivity,Sol-gel,Sol-gel process,Standards,Structure,Students,Switching impulse,Switching impulse withstand voltage (SIWV),Systematic review,Systematic reviews,Tapioca flour,Teacher Readiness,Test conversion factor (TCF),The qualitative-quantitative distinction,Thematic synthesis,Thermal degradation,Thermal properties,Thermoplastic starch,Thermoset polymer,TiO2,Tower Footing resistance,Transdisciplinarity,Transformers,Twitter,Ultrasonication,Underground Cables,Understanding,User Acceptance,VLF Hipot,VLF Tan 15,VPI,Viscosity,Voltage control,Voltage test,Waste paper,Wastewater treatment,Water purification,Windings,Work-readiness,Wound dressings,Wound healing,Wound therapy,XLPE cables,ZDP,a,a revis{\~{a}}o sistem{\'{a}}tica,abordagem positivista,abril,abstract,accepted,accessibility,acid-hydrolysis,actuators,afeto negativo,afeto positivo,afins,agar gel,ageing,akan timbul pertanyaan apakah,alguns tra90s essenciais,ambiente para,amgibuity,and G. Nasserddine,and adolescent,and soil structure analysis,andrew j,anti-positivism,antimicrobial activities,aos quais ja nos,applicability of findings to,application,apren-,aprendizaje escolar,apto 602,arc furnace transformers,are the,areas of interaction,assinala para 0 positivismo,ation,atom economy,autoethnography,autom{\'{a}}ticos de controle para,autotransformers,a{\c{c}}{\~{a}}o de um artigo,backfill material,barriers,base de dados cochrane,because the bulky water,bem-estar subjetivo,beneath,bibliometric study,bidimensional ou em rede,biological engineering,biology of knowing,biomedical engineering,bionanotechnology,blended learning,bllilcllheo1,bloom,breakdown voltage,build theory,by-nc license,c,caracterizando uma pesquisa de,care giving,car{\'{a}}ter descritiva e aplicada,catarina,cdegs,cellulose,cellulose nano-crystals,cellulose nanocrystal,cellulose nanocrystals,ceramics,child,cient{\'{i}}fico para revistas indexadas,clarke,clearance,clustering,cnc,cnf,co-authorship,co-constructed narratives,co-creation value,cognitive development,cognitive process,college education,com {\^{e}}nfase,communication,community and public health,compact distribution lines,composites,comunica{\c{c}}{\~{a}}o,conceitos gerais,concept maps,conceptuales,conhecimento,constructivismo,cristiano j,cunha,curicculum,current chopping,current distribution,cytotoxicity,da filosofia,dan sosial budaya,das linhas do idealismo,de conhecimento,de una manera general,deci-,definitions,delphi technique,di antara aspek yang,diagramas que indican relaciones,didactics,dielectric strength,diet,discussion,distance education,distribution transformers,dist{\^{a}}ncia,diversos campos,dizaje escolar,dr,dynamic dielectric withstand,e representa nele uma,e-learning,earthing grid,earthing resistance,economia de energia el{\'{e}}trica,educa{\c{c}}{\~{a}}o,educa{\c{c}}{\~{a}}o em rede,egc510034,electric strength,electrical requirements,electromagnetic fields,electrospinning,eletr{\^{o}}nicos e digitais,em dados qualitativos,em sa{\'{u}}de,em tomo do problema,ementa da disciplina,employability skills,employees,employers,enfoques socioculturales,engenharia e gest{\~{a}}o do,engineering,engineering teaching,enhance method-,entre conceptos,epistemology,equipment mechanical interchangeability requiremen,equivalent disturbing current,esta identifica9ao,ethics case study,ethnography,evidence-based nursing,evidence‐based practice,excellence in,executiva do infohab,facebook,facebook abuse,facebook addiction,facilitation,facilitators,falls,filos6fico,filters,finite volume,folksonomies,fracaso escolar,fracaso escolar.,fundamental,gait,gait training,gaylarde,global,gold,google classroom,gpr,green chemistry,green coil,grimes,ground,ground potential rise,ground simulation test,grounding grids,grounding networks analysis,grounding transformers,guide,guidelines,harmonic c,has the potential to,health of elderly,health science literature critique,health system,healthy eating,heterogeneous soil,horizontal and,hydration,icle,ict,improving economic feasibility,impulse withstand voltage,inclusion,induction voltage regulators,inductive switching,industry,informa{\c{c}}{\~{a}}o cient{\'{i}}fica e tecnol{\'{o}}gica,instructional objectives,instrument transformers,insulation,intangible assets,integrative literature review,integrative research review: synthesis,integrative review,integrative review ⅐ meta-analysis,intellectual capital,intensive,interactions,interactive interviews,international projects,interpersonal,involve technological,is buried is of,is under the cc,iullgu,jika kita menggunakan indikator,july 15,july 2,july 29,kebolehpasaran,kemahiran 'employability',kesehatan,knowledge,knowledge management,knowledge society,konsumsi,laboratory tests,laclo,lewis,library methods,lications of the academy,licligl1l,lightning,liquid crystals,liquid-immersed distribution,literary semiotics,literature,literature review,locomotor,locomotor training,los mapas conceptuales,low-voltage secondary networks,maio de 2009,mais robus -,malaysia Industry 4.0 forth industry revolution,maleic anhydride,manufacturing industry,marginalization,marianne w,materiality,matrix method,maximum penetration of DG,meaningful learning,mechanical properties,mediadores mec{\^{a}}nicos,medicina baseada em evid{\^{e}}ncias,mela11,melt-spinning,meta-analysis,meta-synthesis,metals,metasynthesis,metatriangulation,methodological approach,methodology,methodology research,metodologia para elabora{\c{c}}{\~{a}}o de,micro titania,microcrystalline cellulose,mine transformers,ministrada por christine claire,mixed method,mixed methods,mobile transformers,mooc,moral deliberation,much higher resistivity than,multisim simulation,mysms,m{\'{i}}dia presencial ou a,m{\'{i}}dias do conhecimento,nano titania,nanocellulose,nanocellulose in the view,nanocomposites,nanocrystalline cellulose,nanofibers,nanofibrillated cellulose,nanomanufacturing,nanomaterials,nanoscale,nanotubes,nanowire,narrative,narrative ethnographies,networkings,no quadro geral de,nurses,nursing,nursing research,n{\textordmasculine}1,o desenvolvimento dessa metodologia,o entre palabras que,o mapas de conceptos,obesity,odo quantitativo,of finland 8,of research reviews,of science,older people,ological rigor and subsequently,online,ontologies,open and distance learning,organization fit,organizational knowledge,organizational socializat,organizational socialization,organizational theory,originalmente apresentado na disciplina,overweight,p(HEMA),pa1,palavras-chave,paradigm,paradigm wars,paradigms,parsley,pekerjaan,pendidikan,pendidikan teknikal,pendidikan tinggi,performance,person,personal,personal narrative,perumahan,physicochemical characterization,poetic language,point of,pol,polylactic acid,polylactide,polymers,populasi,portation and storage of,positivism,power transformers,practice or,pragmatism,preparation,princ{\'{i}}pios e processos das,prisma,proactive behaviors,processing,production and sharing of,prof,programa de p{\'{o}}s-gradua{\c{c}}{\~{a}}o em,project management,psicolog{\'{i}}a educacional,public safety,public service motivation,published by american institute,published online,qualitative,quality,qu{\'{e}} son los mapas,rae,received,rectifier transformers,redes sociais,refe-,referencia,regulating transformers,regulation,reignition,reinforced composite,relational ethics,relations,renewable bionanomaterial,requirements engineering,rer,research,research methodology,resumo da palestra,resumo preparado pela secretaria,review,review literature as topic,review of the literature,rio de janeiro,roman jakobson,rs,s taxonomy,s ystematic review,satisfaction,satisfa{\c{c}}{\~{a}}o de vida,science,science teaching,scientific collaboration,scientific explanations,scrita como um processo,secondary peak of step,self-paced learning,semantics,sense of community,sering digunakan sebagai indikator,service sciences,shelter,siRNA,silk,simulation,sion-making,situa{\c{c}}{\~{a}}o de rua,so de acesso {\`{a}},social,social media abuse,social media addiction,social net-,social network analysis,social networking,social networks,socialization tactics,software,soil in which grid,son s{\'{o}}lo,sonication,specialty transformers,spinal cord injury,spray-drying,stakeholder,standard,stator,step and touch voltage,step voltage,stewart,stimuli-responsive films,subjetivo,substation,sulfuric acid hydrolysis,supranational socialization,surfactant,survey research,sustainability,systematic review,systematic reviews,systematic reviews and meta-analyses,systems engineering,s{\'{i}}ntese da literatura em,tagging,tas para avalia{\c{c}}{\~{a}}o e,teaching and learning,technical graduates,technical institutions,technological applications,technology of information and,tecnologias digitais,tempo oxidation,tempo-oxidation,tendencia dentro do idealismo,tend{\^{e}}ncias tecnol{\'{o}}gicas e pedag{\'{o}}gicas,test limitations,testing,textos acad{\^{e}}micos,that of the soil,the,the education of tomorrow,the nanocellulose is generally,the transformations present in,theory,thermal properties,this open access article,touch,training,transient over-voltage,twitter,ukuran kesejahteraan adalah pendapatan,ultrasonication,umberto eco,unidimensional,universidade federal de santa,usability,usamos para,vertical grid resistance,violence against women,virtual environments,visual deficiency,vis{\~{a}}o de uma editora,vol,voltage,voltage quality,walnut shell,water gradients,weblog,well dispersed in polar,wet disk-milling,winding,work sites,workflow,workplace,wound healing,xlpe-covered cables,y,{\'{e}} uma das t{\'{e}}cnicas,⅐ metasynthesis ⅐ systematic},
+number = {4},
+pages = {16--21},
+pmid = {8673168},
+title = {{Practicability of Blockchain Technology and Scalable Blockchain Network: Sharding}},
+url = {http://waset.org/publications/14223/soil-resistivity-data-computations-single-and-two-layer-soil-resistivity-structure-and-its-implication-on-earthing-design{\%}0Ahttp://www.jo-mo.com/fadoohelp/data/DotNet/Ethical securty.pdf{\%}0Ahttp://link.springer.com/10.10},
+volume = {23},
+year = {2019}
+}
+@article{Woo2020,
+abstract = {Advances in blockchain technology have made a significant impact on a wide range of research areas due to the features such as transparency, decentralization and traceability. With the explosive growth of blockchain transactions, there has been a growing interest in improving the scalability of blockchain network. Sharding is one of the methods to solve this scalability problem by partitioning the network into several shards so that each shard can process the transactions in parallel. Ethereum places each transaction statically on a shard based on its account address without considering the complexity of the transaction or the load generated by the transaction. This causes the transaction utilization on each shard to be uneven, which makes the transaction throughput of the network decrease. This paper formulates this problem as a multi-dimensional knapsack problem (MKP) and proposes a heuristic algorithm called GARET. The GARET dynamically relocates the transaction load of each shard based on gas consumption to maximize the transaction throughput. Ethereum gas is a unit that represents the amount of computational effort needed to execute operations in a transaction. Benchmarking results show that GARET outperforms existing techniques by up to 12{\%} in transaction throughput and decreases the makespan of transaction latency by about 74{\%} under various conditions. It is also shown that the relocation overhead is minimal and does not affect the overall performance.},
+annote = {META{\{}
+[Study ID]
+1
+
+[Accepted]
+V
+
+[Reason]
+Relevant topic
+{\}}
+
+ME{\{}
+[Main categories]
+load balancing 
+
+[Classification]
+
+[Themes]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+Load balancing in the Ethereum sharded enviroment
+
+[Summary of paper]
+See main findings
+
+[Evaluation of paper]
+Does not have a discussion on security
+
+[Main findings]
+Transaction load prediction algorithm (future gas usage based on past usage) | account relocation algorithm (priority queue based on previous algorithm) | 12{\%} increase in throughput | 74{\%} decrease in latency
+
+[Rapidchain specifics]
+None
+
+[Rapidchain applications]
+Due to the different nature of transactions in Ethereums account model and Rapidchains UTXO model the results themselves doesn't mean anything, but the abstract concept of the main findings, as well ass a probabilatistic positive result of these mehods, may be applied to Rapidchain.
+
+[Future work]
+Overhead
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+10
+
+[Is the research method, process or design clearly stated?]
+7
+
+[Is the research method likely to have introduced significant bias?]
+7
+[Are the data collection methods adequately described?]
+9
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+10
+[Is there any statistical methods applied and were they justified?]
+10
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+7
+[Are negative findings presented?]
+0
+[Are important effects overlooked?]
+-
+[How credible are the findings?]
+6
+[If credible, are they important?]
+9
+[How well has knowledge or understanding been extended by the research?]
+7
+[How well does the evaluation address its original aims and purpose?]
+10
+[How well is the scope for drawing wider inference explained?]
+10
+[How well has the approach to, and formulation of, analysis been conveyed?]
+9
+[How well was the diversity of perspective and context explored?]
+7
+[How clear are the links between data, interpretation and conclusions – i.e. how well can the route to any conclusions be seen?]
+8
+[How clear and coherent is the research?]
+10
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+7
+[Do the study measures allow the research questions to be answered?]
+8
+[Are the measures used in the study the most relevant ones for answering the research questions?]
+8
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+3
+[Are all study questions answered?]
+9
+{\}}},
+author = {Woo, Sangyeon and Song, Jeho and Kim, Sanghyeok and Kim, Youngjae and Park, Sungyong},
+doi = {10.1007/s10586-020-03087-1},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Woo et al. - 2020 - GARET improving throughput using gas consumption-aware relocation in Ethereum sharding environments.pdf:pdf},
+isbn = {0123456789},
+issn = {15737543},
+journal = {Cluster Computing},
+keywords = {Blockchain,Ethereum,Relocation,Scalability,Sharding},
+publisher = {Springer US},
+title = {{GARET: improving throughput using gas consumption-aware relocation in Ethereum sharding environments}},
+url = {https://doi.org/10.1007/s10586-020-03087-1},
+volume = {1},
+year = {2020}
+}
+@article{Xu2020a,
+abstract = {Traditional Blockchain Sharding approaches can only tolerate up to n/3 of nodes being adversary because they rely on the hyper-geometric distribution to make a failure (an adversary does not have n/3 of nodes globally but can manipulate the consensus of a Shard) hard to happen. The system must maintain a large Shard size (the number of nodes inside a Shard) to sustain the low failure probability so that only a small number of Shards may exist. In this paper, we present a new approach of Blockchain Sharding that can withstand up to n/2 of nodes being bad. We categorise the nodes into different classes, and every Shard has a fixed number of nodes from different classes. We prove that this design is much more secure than the traditional models (only have one class) and the Shard size can be reduced significantly. In this way, many more Shards can exist, and the transaction throughput can be largely increased. The improved Blockchain Sharding approach is promising to serve as the foundation for decentralised autonomous organisations and decentralised database.},
+annote = {META{\{}
+[Study ID]
+26
+[Accepted]
+X
+[Reason]
+Severly lacking paper. Very short. Lacking analysis. Low score on the clear and coherrent criteria. Non-scientific normanclature. No clear explenation/argument of how n/2 tolerance is achived in the total setting, (yes each comitee/jury can have 1/2 adversaries, but what about the total resiliance?). I also cannot see how classes of pariticipants is relevant, or how it has any meanigfull positive impact. 
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {2001.05240},
+author = {Xu, Yibin and Huang, Yangyu},
+doi = {10.1145/3341105.3374069},
+eprint = {2001.05240},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Xu, Huang - 2020 - An n2 byzantine node tolerate blockchain sharding approach.pdf:pdf},
+isbn = {9781450368667},
+journal = {Proceedings of the ACM Symposium on Applied Computing},
+keywords = {Blockchain,Blockchain sharding,Decentralised ledger,PBFT},
+pages = {349--352},
+title = {{An n/2 byzantine node tolerate blockchain sharding approach}},
+year = {2020}
+}
+@article{Xu2020,
+abstract = {Blockchain sharding is a promising approach to solving the dilemma between decentralization and high performance (transaction throughput) for blockchain. The main challenge of blockchain sharding systems is how to reach a decision on a statement among a subgroup (shard) of people while ensuring the whole population recognizes this statement. Namely, the challenge is to prevent an adversary who does not have the majority of nodes globally but have the majority of nodes inside a shard. Most blockchain sharding approaches can only reach a correct consensus inside a shard with at most n/3 evil nodes in a n node system. There is a blockchain sharding approach which can prevent an incorrect decision to be reached when the adversary does not have n/2 nodes globally. However, the system can be stopped from reaching consensus (become deadlocked) if the adversary controls a smaller number of nodes. In this article, we present an improved Blockchain sharding approach that can withstand n/2 adversarial nodes and recover from deadlocks. The recovery is made by dynamically adjusting the number of shards and the shard size. A performance analysis suggests our approach has a high performance (transaction throughput) while requiring little bandwidth for synchronization.},
+annote = {META{\{}
+[Study ID]
+25
+[Accepted]
+X
+[Reason]
+Builds on previous rejected paper with id 26. Many of the ideas in this paper is just rebranded content from Rapidchain (or others). 
+{\}}},
+author = {Xu, Yibin and Huang, Yangyu and Shao, Jianhua and Theodorakopoulos, George},
+doi = {10.1002/cpe.5773},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Xu et al. - 2020 - A flexible n2 adversary node resistant and halting recoverable blockchain sharding protocol.pdf:pdf},
+issn = {15320634},
+journal = {Concurrency Computation },
+keywords = {blockchain sharding,distributed ledger,halting},
+number = {December 2019},
+pages = {1--13},
+title = {{A flexible n/2 adversary node resistant and halting recoverable blockchain sharding protocol}},
+year = {2020}
+}
+@article{Xu2020b,
+abstract = {Blockchain Sharding is a blockchain performance enhancement approach. By splitting a blockchain into several parallel-run committees (shards), it helps increase transaction throughput, reduce resources required, and increase reward expectation for participants. Recently, several flexible sharding methods that can tolerate up to {\$}n/2{\$} Byzantine nodes ({\$}n/2{\$} security level) have been proposed. However, these methods suffer from two main drawbacks. First, in a non-sharding blockchain, nodes can have different weight (power or stake) to create a consensus. So an adversary needs to control half of the overall weight of the system in order for a piece of faulty information to be accepted into the blockchain ({\$}p/2{\$} security level). In blockchain sharding, all nodes carry the same weight. Thus, it is only under the assumption that the honest participants are creating as many nodes as they can that a {\$}n/2{\$} security level blockchain sharding reaches the {\$}p/2{\$} security level. Secondly, when some nodes leave the system, other nodes need to be reassigned, frequently, from shard to shard in order to maintain the security level of the system. In this paper, we present Multichain MWPoW, a {\$}p/2{\$} security level blockchain sharding architecture that does not require honest participants to create multiple nodes and requires less node reassignment when some nodes leave the system. It combines the Multiple Winners Proof of Work consensus protocol (MWPoW) with the flexibility of {\$}n/2{\$} blockchain sharding. Our experiments show that Multichain MWPoW outperforms existing blockchain sharding approaches in terms of security, transaction throughput and flexibility.},
+annote = {META{\{}
+[Study ID]
+24
+[Accepted]
+X
+[Reason]
+Builds on previous rejected papers with id 26 and id 25. 
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {2004.04798},
+author = {Xu, Yibin and Huang, Yangyu and Shao, Jianhua and Theodorakopoulos, George},
+eprint = {2004.04798},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Xu et al. - 2020 - Multichain-MWPoW A {\$}p2{\$} Adversary Power Resistant Blockchain Sharding Approach to a Decentralised Autonomous Organisa.pdf:pdf},
+keywords = {blockchain,blockchain performance,blockchain security,blockchain sharding,distributed ledger},
+title = {{Multichain-MWPoW: A {\$}p/2{\$} Adversary Power Resistant Blockchain Sharding Approach to a Decentralised Autonomous Organisation Architecture}},
+url = {http://arxiv.org/abs/2004.04798},
+year = {2020}
+}
+@article{Yu2020,
+abstract = {The Blockchain technology, featured with its decentralized tamper-resistance based on a Peer-to-Peer network, has been widely applied in financial applications, and even further been extended to industrial applications. However, the weak scalability of traditional Blockchain technology severely affects the wide adoption due to the well-known trillema of decentralization-security-scalability in Blockchains. In regards to this issue, a number of solutions have been proposed, targeting to boost the scalability while preserving the decentralization and security. They range from modifying the on-chain data structure and consensus algorithms to adding the off-chain technologies. Therein, one of the most practical methods to achieve horizontal scalability along with the increasing network size is sharding, by partitioning network into multiple shards so that the overhead of duplicating communication, storage, and computation in each full node can be avoided. This paper presents a survey focusing on sharding in Blockchains in a systematic and comprehensive way. We provide detailed comparison and quantitative evaluation of major sharding mechanisms, along with our insights analyzing the features and restrictions of the existing solutions. We also provide theoretical upper-bound of the throughput for each considered sharding mechanism. The remaining challenges and future research directions are also reviewed.},
+annote = {META{\{}
+[Study ID]
+18
+[Accepted]
+V
+[Reason]
+
+{\}}
+
+ME{\{}
+[Main categories]
+
+[Classification]
+
+[Metrics or measures]
+
+[Quality Assesment discussion]
+
+[Research question or issue]
+
+[Notes]
+
+[Summary of paper]
+
+[Evaluation of paper]
+
+[Main findings]
+
+[Rapidchain specifics]
+
+[Rapidchain applications]
+
+[Future work]
+
+{\}}
+
+QA{\{}
+[Are the aims or research questions clearly stated]
+
+[Is the research method, process or design clearly stated?]
+
+[Is the research method likely to have introduced significant bias?]
+
+[Are the data collection methods adequately described?]
+
+[Was the denominator (i.e. the population size), sample size, composition and coverage reported?]
+
+[How well have detail, depth, and complexity (i.e. richness) of the data been conveyed?]
+
+[Are negative findings presented?]
+
+[Are important effects overlooked?]
+
+[How credible are the findings?]
+
+[If credible, are they important?]
+
+[How well has knowledge or understanding been extended by the research?]
+
+[How well is the scope for drawing wider inference explained?]
+
+[How well has the approach to, and formulation of, analysis been conveyed?]
+
+[How well was the diversity of perspective and context explored?]
+
+[How clear and coherent is the research?]
+
+[How clear are the assumptions/theoretical perspectives/values that have shaped the form and output of the evaluation?]
+
+[Do the researchers explain the consequences of any problems with the validity/reliability of their measures?]
+
+{\}}},
+author = {Yu, Guangsheng and Wang, Xu and Yu, Kan and Ni, Wei and Zhang, J. Andrew and Liu, Ren Ping},
+doi = {10.1109/ACCESS.2020.2965147},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Yu et al. - 2020 - Survey Sharding in Blockchains.pdf:pdf},
+issn = {21693536},
+journal = {IEEE Access},
+keywords = {Blockchain,scalability,scale-out mechanism,sharding,survey,throughput},
+pages = {14155--14181},
+title = {{Survey: Sharding in Blockchains}},
+volume = {8},
+year = {2020}
+}
+@article{Zamyatin2019,
+abstract = {Communication across distributed systems, where each system runs its own consensus, is a problem previously studied only within a single trust domain (e.g., a datacenter). With the appearance of distributed ledgers or blockchains, numerous protocols requiring robustness against adversarial behavior have emerged. Cross-chain communication thereby plays a fundamental role in cryptocurrency exchanges, sharding, as well as the bootstrapping and migration of distributed ledgers. Unfortunately, existing proposals are designed ad-hoc for specific use-cases, making it hard to gain confidence on their correctness and to use them as building blocks for new systems. In this paper, we provide the first systematic exposition of protocols for cross-chain communication. Through formalization of the underlying research question, which reduces to the fair exchange problem, we identify threat and network model assumptions, necessary for designing correct cross-chain communication protocols. We overview main applications, derive a classification and provide a comparative analysis of existing approaches. Further, we survey and classify techniques for verifying state cross-chain and mechanisms for constructing locks.},
+annote = {META{\{}
+[Study ID]
+31
+[Accepted]
+X
+[Reason]
+This is about two different ledgers, not running the same protocol.
+{\}}},
+author = {Zamyatin, Alexei and Al-Bassam, Mustafa and Zindros, Dionysis and Kokoris-Kogias, Eleftherios and Moreno-Sanchez, Pedro and Kiayias, Aggelos and Knottenbelt, William J},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Zamyatin et al. - 2019 - SoK Communication Across Distributed Ledgers.pdf:pdf},
+pages = {1--23},
+title = {{SoK: Communication Across Distributed Ledgers}},
+year = {2019}
+}
+@article{Zhang2020,
+abstract = {Traditional public distributed ledgers have not been able to scale-out well and work efficiently. Sharding is deemed as a promising way to solve this problem. By partitioning all nodes into small committees and letting them work in parallel, we can significantly lower the amount of communication and computation, reduce the overhead on each node's storage, as well as enhance the throughput of distributed ledger. Existing sharding-based protocols still suffer from several serious drawbacks. The first thing is that all honest nodes must connect well with each other, which demands a huge number of communication channels in the network. Moreover, previous protocols have face great loss in efficiency in the case where the honesty of each committee's leader is in question. At the same time, no explicit incentive is provided for nodes to actively participate in the protocol. We present CycLedger, a scalable and secure parallel protocol for distributed ledger via sharding. Our protocol selects a leader and a partial set for each committee, who are in charge of maintaining intra-shard consensus and communicating with other committees, to reduce the amortized complexity of communication, computation and storage on all nodes. We introduce a novel commitment scheme between committees and a recovery procedure to prevent the system from crashing even when leaders of committees are malicious. To add incentive for the network, we use the concept of reputation, which measures each node's computing power. As nodes with higher reputation receive more rewards, there is an encouragement for nodes with strong computing ability to work honestly so as to gain reputation. In this way, we strike out a new path to establish scalability, security and incentive for the sharding-based distributed ledger.},
+annote = {META{\{}
+30
+[Accepted]
+X
+[Reason]
+Reputation based protocol. Small statements/discussion on Rapidchain, but very lacking, no novel discussion, and some statements that may not be truthfull. 
+{\}}},
+archivePrefix = {arXiv},
+arxivId = {2001.06778},
+author = {Zhang, Mengqian and Li, Jichen and Chen, Zhaohua and Chen, Hongyin and Deng, Xiaotie},
+eprint = {2001.06778},
+file = {:C$\backslash$:/Users/kimat/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Zhang et al. - 2020 - CycLedger A Scalable and Secure Parallel Protocol for Distributed Ledger via Sharding.pdf:pdf},
+title = {{CycLedger: A Scalable and Secure Parallel Protocol for Distributed Ledger via Sharding}},
+url = {http://arxiv.org/abs/2001.06778},
+year = {2020}
+}
